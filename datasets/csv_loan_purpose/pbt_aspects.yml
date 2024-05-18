@@ -1,0 +1,67 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: Src_Sys_Cd
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Src_Lending_Purpose_Cd
+    type: integer
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Src_Lending_Purpose_Desc
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Predominant_Purpose
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Housing_Purpose
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Sub_Purpose_Housing
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Sub_Purpose_Personal
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Sub_Purpose_Business
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Sub_Purpose_Leases
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

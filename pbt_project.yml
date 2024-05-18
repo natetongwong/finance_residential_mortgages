@@ -1,0 +1,182 @@
+name: Finance_Residential_Mortgages
+description: '2.4 Business use case: Finance Residential Mortgages'
+version: 0.0.1
+author: nathan+westpac@prophecy.io
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: financeresidentialmortgages
+  parentArtefactID: pocwestpac
+  buildSystem: wheel
+  author: null
+  createdAt: '2024-05-14 17:00:34'
+pipelines:
+  pipelines/L0_raw_CSVtoDelta:
+    name: L0_raw_CSVtoDelta
+    description: Read CSV files into Delta
+    author: nathan+westpac@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-05-14 17:00:34'
+    datasets:
+      inputs:
+      - datasets/csv_loan_purpose
+      - datasets/csv_origination_system
+      - datasets/csv_product_system
+      outputs:
+      - datasets/L0_raw_loan_purpose
+      - datasets/L0_raw_product_system
+      - datasets/L1_raw_origination_system
+    subgraphs: []
+    dependencies: {}
+  pipelines/L1_Bronze_ExactAndInitialEnrichments:
+    name: L1_Bronze_ExactAndInitialEnrichments
+    description: ''
+    author: nathan+westpac@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-05-14 23:51:15'
+    datasets:
+      inputs:
+      - datasets/L0_raw_loan_purpose
+      - datasets/L0_raw_product_system
+      - datasets/L1_raw_origination_system
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/csv_loan_purpose:
+    name: csv_loan_purpose
+    description: ''
+    author: nathan+westpac@prophecy.io
+    createdAt: '2024-05-14 19:26:44'
+    mode: batch
+    physicalDatasets:
+      Sales-eng:
+        fabricId: 11613
+        datasetType: File
+        description: ''
+        author: nathan+westpac@prophecy.io
+        createdAt: '2024-05-14 19:26:44'
+  datasets/csv_product_system:
+    name: csv_product_system
+    description: ''
+    author: nathan+westpac@prophecy.io
+    createdAt: '2024-05-14 19:31:20'
+    mode: batch
+    physicalDatasets:
+      Sales-eng:
+        fabricId: 11613
+        datasetType: File
+        description: ''
+        author: nathan+westpac@prophecy.io
+        createdAt: '2024-05-14 19:31:20'
+  datasets/csv_origination_system:
+    name: csv_origination_system
+    description: ''
+    author: nathan+westpac@prophecy.io
+    createdAt: '2024-05-14 19:33:03'
+    mode: batch
+    physicalDatasets:
+      Sales-eng:
+        fabricId: 11613
+        datasetType: File
+        description: ''
+        author: nathan+westpac@prophecy.io
+        createdAt: '2024-05-14 19:33:03'
+  datasets/L0_raw_loan_purpose:
+    name: L0_raw_loan_purpose
+    description: ''
+    author: nathan+westpac@prophecy.io
+    createdAt: '2024-05-14 23:47:08'
+    mode: batch
+    physicalDatasets:
+      Sales-eng:
+        fabricId: 11613
+        datasetType: Database
+        description: ''
+        author: nathan+westpac@prophecy.io
+        createdAt: '2024-05-14 23:47:08'
+  datasets/L0_raw_product_system:
+    name: L0_raw_product_system
+    description: ''
+    author: nathan+westpac@prophecy.io
+    createdAt: '2024-05-14 23:47:41'
+    mode: batch
+    physicalDatasets:
+      Sales-eng:
+        fabricId: 11613
+        datasetType: Database
+        description: ''
+        author: nathan+westpac@prophecy.io
+        createdAt: '2024-05-14 23:47:41'
+  datasets/L1_raw_origination_system:
+    name: L0_raw_origination_system
+    description: ''
+    author: nathan+westpac@prophecy.io
+    createdAt: '2024-05-14 23:48:10'
+    mode: batch
+    physicalDatasets:
+      Sales-eng:
+        fabricId: 11613
+        datasetType: Database
+        description: ''
+        author: nathan+westpac@prophecy.io
+        createdAt: '2024-05-14 23:48:10'
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: '3.10'
+  gemLibsVersion: 1.3.4.0
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-05-14 17:00:34'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- type: plibMaven
+  modifiedAt: '2024-05-14T23:51:21.701584Z'
+  name: plibMaven
+  version: 7.1.95
+  id: '1699264932'
+  createdAt: '2024-05-14T23:51:21.701457Z'
+- type: plibPypi
+  modifiedAt: '2024-05-14T23:51:21.701691Z'
+  name: plibPypi
+  version: 1.8.15
+  id: '372628141'
+  createdAt: '2024-05-14T23:51:21.701652Z'
+projectDependencies:
+  '12654':
+    projectUID: 12654
+    projectName: ProphecySparkBasicsPython
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=
+    version: 0.2.12
+    isDefault: true
+    author: null
+    createdAt: '2024-05-14 16:59:46'
+  '12655':
+    projectUID: 12655
+    projectName: ProphecyWarehousePython
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12655.git&subPath=
+    version: 0.0.5
+    isDefault: true
+    author: null
+    createdAt: '2024-05-14 16:59:46'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
