@@ -3,6 +3,12 @@
     "migrationVersions" : {
       "gemBuilderVersion" : "v1"
     },
+    "functions" : {
+      "businessRules" : {
+        "rules" : [ ],
+        "sharedRules" : [ ]
+      }
+    },
     "codeGenConfiguration" : {
       "editableConfig" : true,
       "plibVersion" : {
@@ -17,7 +23,7 @@
       "hasApplication" : true
     },
     "language" : "python",
-    "fabricId" : "11613",
+    "fabricId" : "109",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -51,11 +57,11 @@
     "buildSystem" : "maven",
     "externalDependencies" : [ ],
     "dependentProjectExternalDependencies" : [ {
-      "projectUID" : "12654",
+      "projectUID" : "224",
       "projectName" : "ProphecySparkBasicsPython",
       "externalDependencies" : [ ]
     }, {
-      "projectUID" : "12655",
+      "projectUID" : "225",
       "projectName" : "ProphecyWarehousePython",
       "externalDependencies" : [ ]
     } ],
@@ -102,8 +108,8 @@
       "metadata" : {
         "label" : "reformatted_data",
         "slug" : "reformatted_data",
-        "x" : -560,
-        "y" : -20,
+        "x" : -500,
+        "y" : 0,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -308,10 +314,10 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##To_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Current_Balance", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Legal_Entity_Id", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Maturity_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##From_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Src_Sys_Code", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Currency", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Opened_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Gl_Account_Id", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Account_Id", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Product_Code" ]
+        "columnsSelector" : [ "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Opened_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Src_Sys_Code", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##To_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Currency", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##From_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Legal_Entity_Id", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Maturity_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Account_Id", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Current_Balance", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Gl_Account_Id", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Product_Code" ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.12&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -321,8 +327,8 @@
       "metadata" : {
         "label" : "L0_raw_product_system",
         "slug" : "L0_raw_product_system",
-        "x" : -400,
-        "y" : -20,
+        "x" : -280,
+        "y" : 0,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -566,7 +572,7 @@
         "label" : "csv_origination_system",
         "slug" : "csv_origination_system",
         "x" : -720,
-        "y" : 120,
+        "y" : 180,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -593,7 +599,7 @@
         "label" : "csv_product_system",
         "slug" : "csv_product_system",
         "x" : -720,
-        "y" : -20,
+        "y" : 0,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -647,7 +653,7 @@
         "label" : "L1_raw_origination_system",
         "slug" : "L1_raw_origination_system",
         "x" : -500,
-        "y" : 120,
+        "y" : 180,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -760,5 +766,23 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  }
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.metainfo.functions.businessRules.rules[0].data[1].outputs[0]",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Output cannot contain `Any` as data.",
+    "tags" : [ ],
+    "relatedInformation" : [ ],
+    "diagnosticType" : 1
+  } ]
 }

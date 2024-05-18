@@ -4,7 +4,7 @@ from pyspark.sql.types import *
 from prophecy.utils import *
 from prophecy.libs import typed_lit
 from l0_raw_csvtodelta.config.ConfigStore import *
-from l0_raw_csvtodelta.udfs.UDFs import *
+from l0_raw_csvtodelta.udfs import *
 
 def csv_product_system(spark: SparkSession) -> DataFrame:
     return spark.read\

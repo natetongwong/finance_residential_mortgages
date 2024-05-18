@@ -2,7 +2,7 @@ from pyspark.sql import *
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
 from l1_bronze_exactandinitialenrichments.config.ConfigStore import *
-from l1_bronze_exactandinitialenrichments.udfs.UDFs import *
+from l1_bronze_exactandinitialenrichments.udfs import *
 from prophecy.utils import *
 from l1_bronze_exactandinitialenrichments.graph import *
 
@@ -11,8 +11,10 @@ def pipeline(spark: SparkSession) -> None:
     df_reformatted_data = reformatted_data(spark, df_L0_raw_loan_purpose)
     create_loan_purpose_lookup(spark, df_reformatted_data)
     df_L0_raw_origination_system = L0_raw_origination_system(spark)
+    df_loan_details_with_purpose = loan_details_with_purpose(spark, df_L0_raw_origination_system)
     df_L0_raw_product_system = L0_raw_product_system(spark)
-    df_joined_accounts = joined_accounts(spark, df_L0_raw_product_system, df_L0_raw_origination_system)
+    df_by_account_id = by_account_id(spark, df_L0_raw_product_system, df_loan_details_with_purpose)
+    df_Update_Column_Names = Update_Column_Names(spark, df_by_account_id)
 
 def main():
     spark = SparkSession.builder\

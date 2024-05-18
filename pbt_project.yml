@@ -139,9 +139,19 @@ functions:
   udafs: {}
   expressions: {}
   airflowFunctions: {}
+  businessRules:
+    businessRules/Override_Housing_Purpose:
+      name: Override_Housing_Purpose
+      description: Rule to override housing purposes
+      tags: []
+      inputs: []
+      outputs: []
+      author: nathan@prophecy.io
+      createdAt: '2022-12-15 18:04:50'
 subgraphs: {}
 sqlModels: {}
 sqlSnapshots: {}
+sqlTests: {}
 sqlMacros: {}
 sqlSeeds: {}
 sqlSources: {}
@@ -161,22 +171,22 @@ dependencies:
   id: '372628141'
   createdAt: '2024-05-14T23:51:21.701652Z'
 projectDependencies:
-  '12654':
-    projectUID: 12654
+  '224':
+    projectUID: 224
     projectName: ProphecySparkBasicsPython
-    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=
-    version: 0.2.12
+    repositoryPath: gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=
+    version: 0.2.17.dev
     isDefault: true
     author: null
-    createdAt: '2024-05-14 16:59:46'
-  '12655':
-    projectUID: 12655
+    createdAt: '2024-05-18 21:11:29'
+  '225':
+    projectUID: 225
     projectName: ProphecyWarehousePython
-    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12655.git&subPath=
-    version: 0.0.5
+    repositoryPath: gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_225.git&subPath=
+    version: 0.0.6.dev
     isDefault: true
     author: null
-    createdAt: '2024-05-14 16:59:46'
+    createdAt: '2024-05-18 21:11:35'
 flags:
   shouldAddDefaultDependenciesIfAbsent: true
 pipelineConfigurations: {}

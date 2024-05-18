@@ -2,7 +2,7 @@ from pyspark.sql import *
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
 from l0_raw_csvtodelta.config.ConfigStore import *
-from l0_raw_csvtodelta.udfs.UDFs import *
+from l0_raw_csvtodelta.udfs import *
 from prophecy.utils import *
 from l0_raw_csvtodelta.graph import *
 
