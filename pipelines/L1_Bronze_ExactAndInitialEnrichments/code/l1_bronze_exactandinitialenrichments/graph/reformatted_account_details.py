@@ -6,15 +6,13 @@ from prophecy.libs import typed_lit
 from l1_bronze_exactandinitialenrichments.config.ConfigStore import *
 from l1_bronze_exactandinitialenrichments.udfs import *
 
-def Update_Column_Names(spark: SparkSession, by_account_id: DataFrame) -> DataFrame:
-    return by_account_id.select(
-        when((col("From_Date") == last_day(col("From_Date"))), col("From_Date"))\
-          .otherwise(last_day(date_sub(col("From_Date"), 30)))\
-          .alias("Process_Date"), 
+def reformatted_account_details(spark: SparkSession, reformat_update_column_names: DataFrame) -> DataFrame:
+    return reformat_update_column_names.select(
+        col("Process_Date"), 
         col("From_Date"), 
         col("To_Date"), 
         col("Account_Id"), 
-        col("Src_Sys_Code").alias("Product_system"), 
+        col("Product_system"), 
         col("Product_Code"), 
         col("Gl_Account_Id"), 
         col("Legal_Entity_Id"), 
@@ -29,8 +27,12 @@ def Update_Column_Names(spark: SparkSession, by_account_id: DataFrame) -> DataFr
         col("Predominant_Purpose"), 
         col("EFS_Housing_Purpose"), 
         col("Sub_Purpose"), 
-        lookup("rulecheck", col("EFS_Housing_Purpose"))\
-          .getField("EFS_Housing_purpose_Rule_ID")\
-          .alias("EFS_Housing_purpose_Rule_ID"), 
+        col("EFS_Housing_purpose_Rule_ID"), 
+        col("Residual_days"), 
+        col("Residual_years"), 
+        when(((col("Residual_years") > lit(0)) & (col("Residual_years") < lit(1))), lit("Short Term"))\
+          .when((col("Residual_years") > lit(1)), lit("Long Term"))\
+          .otherwise(lit("Long Term"))\
+          .alias("EFS_Residual_Term"), 
         col("Housing_Purpose")
     )

@@ -6,5 +6,5 @@ from prophecy.libs import typed_lit
 from l1_bronze_exactandinitialenrichments.config.ConfigStore import *
 from l1_bronze_exactandinitialenrichments.udfs import *
 
-def L0_raw_loan_purpose(spark: SparkSession) -> DataFrame:
-    return spark.read.table("`westpac`.`raw`.`loan_purpose`")
+def override_housing_purpose_rule(spark: SparkSession, in0: DataFrame) -> DataFrame:
+    return in0.select(expr("*"), Override_Housing_Purpose())

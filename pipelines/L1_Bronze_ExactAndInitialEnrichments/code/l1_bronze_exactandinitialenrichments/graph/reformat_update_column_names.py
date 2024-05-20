@@ -6,15 +6,13 @@ from prophecy.libs import typed_lit
 from l1_bronze_exactandinitialenrichments.config.ConfigStore import *
 from l1_bronze_exactandinitialenrichments.udfs import *
 
-def Update_Column_Names(spark: SparkSession, by_account_id: DataFrame) -> DataFrame:
-    return by_account_id.select(
-        when((col("From_Date") == last_day(col("From_Date"))), col("From_Date"))\
-          .otherwise(last_day(date_sub(col("From_Date"), 30)))\
-          .alias("Process_Date"), 
+def reformat_update_column_names(spark: SparkSession, Update_Column_Names: DataFrame) -> DataFrame:
+    return Update_Column_Names.select(
+        col("Process_Date"), 
         col("From_Date"), 
         col("To_Date"), 
         col("Account_Id"), 
-        col("Src_Sys_Code").alias("Product_system"), 
+        col("Product_system"), 
         col("Product_Code"), 
         col("Gl_Account_Id"), 
         col("Legal_Entity_Id"), 
@@ -29,8 +27,8 @@ def Update_Column_Names(spark: SparkSession, by_account_id: DataFrame) -> DataFr
         col("Predominant_Purpose"), 
         col("EFS_Housing_Purpose"), 
         col("Sub_Purpose"), 
-        lookup("rulecheck", col("EFS_Housing_Purpose"))\
-          .getField("EFS_Housing_purpose_Rule_ID")\
-          .alias("EFS_Housing_purpose_Rule_ID"), 
+        col("EFS_Housing_purpose_Rule_ID"), 
+        datediff(col("Maturity_Date"), col("Process_Date")).alias("Residual_days"), 
+        (datediff(col("Maturity_Date"), col("Process_Date")) / lit(365.0)).alias("Residual_years"), 
         col("Housing_Purpose")
     )

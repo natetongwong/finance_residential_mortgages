@@ -1,0 +1,25 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: EFS_Housing_Purpose
+    type: string
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: EFS_Housing_purpose_Rule_ID
+    type: string
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Rule_Name
+    type: string
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

@@ -6,7 +6,7 @@ from prophecy.libs import typed_lit
 from l1_bronze_exactandinitialenrichments.config.ConfigStore import *
 from l1_bronze_exactandinitialenrichments.udfs import *
 
-def loan_details_with_purpose(spark: SparkSession, in0: DataFrame) -> DataFrame:
+def lookup_loan_purpose(spark: SparkSession, in0: DataFrame) -> DataFrame:
     return in0.select(
         col("From_Date"), 
         col("To_Date"), 

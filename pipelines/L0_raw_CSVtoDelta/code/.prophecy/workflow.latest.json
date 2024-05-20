@@ -100,8 +100,73 @@
     "sourcePort" : "PRq3B0UlQO3q5dpsJC7xA$$37opI0BrOdSHhb8yxksB4",
     "target" : "AAhn6WIn-o8OkT5dOnolY$$EARF4oPVLaxf8JV-TH0IE",
     "targetPort" : "e1fxhIJ8jTlwgY4-o99U9$$LyNAJP4eEqkEycpXOaZ-g"
+  }, {
+    "id" : "VkjGXj9j0774ev_GmFN5G$$IClIN_e6aQ-hBpw7GZ-PC",
+    "source" : "k2xh6-CWGv8enIiu3vLn9$$gU7Z7IWJvV3EzReLF0GHy",
+    "sourcePort" : "YV_qVZ6Emxk-LUp2hlF8n$$FhnV5kMXQYEHJOu-d_obH",
+    "target" : "xCFrzLjw0xKePneOPt1og$$gdQarmvmuIzSIEWI-Y00Q",
+    "targetPort" : "6wuM0y-vYJmadNsioIFf9$$egIB_9kiUAs0YE5C2P0_z"
   } ],
   "processes" : {
+    "xCFrzLjw0xKePneOPt1og$$gdQarmvmuIzSIEWI-Y00Q" : {
+      "id" : "xCFrzLjw0xKePneOPt1og$$gdQarmvmuIzSIEWI-Y00Q",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "L0_raw_rule_ID_mapping",
+        "slug" : "L0_raw_rule_ID_mapping",
+        "x" : -500,
+        "y" : 340,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "6wuM0y-vYJmadNsioIFf9$$egIB_9kiUAs0YE5C2P0_z",
+          "slug" : "create_script_dataframe",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "EFS_Housing_Purpose",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_purpose_Rule_ID",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Rule_Name",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/L0_raw_rule_ID_mapping"
+      }
+    },
     "xZt5QQbV3YlWQ6CUyQ2cw$$8if3zKnCdDlnUZBulgwZz" : {
       "id" : "xZt5QQbV3YlWQ6CUyQ2cw$$8if3zKnCdDlnUZBulgwZz",
       "component" : "Reformat",
@@ -646,6 +711,67 @@
         "datasetId" : "datasets/csv_loan_purpose"
       }
     },
+    "k2xh6-CWGv8enIiu3vLn9$$gU7Z7IWJvV3EzReLF0GHy" : {
+      "id" : "k2xh6-CWGv8enIiu3vLn9$$gU7Z7IWJvV3EzReLF0GHy",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "create_rule_ID_mapping",
+        "slug" : "create_rule_ID_mapping",
+        "x" : -720,
+        "y" : 340,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "YV_qVZ6Emxk-LUp2hlF8n$$FhnV5kMXQYEHJOu-d_obH",
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "EFS_Housing_Purpose",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_purpose_Rule_ID",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Rule_Name",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true,
+        "autoUpdateOnRun" : true
+      },
+      "properties" : {
+        "script" : "# Data to be added to the DataFrame\ndata = [\n    (\"OO\", \"1\",\"No_Rule_Applied\"),\n    (\"IPL\", \"4\", \"Override_Housing_Purpose\")\n]\n\n# Specify the schema for the DataFrame\nschema = StructType([\n    StructField(\"EFS_Housing_Purpose\", StringType(), False),\n    StructField(\"EFS_Housing_purpose_Rule_ID\", StringType(), False),\n    StructField(\"Rule_Name\", StringType(), False)\n])\n# Create the DataFrame\nout0 = spark.createDataFrame(data, schema)",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
+      }
+    },
     "AAhn6WIn-o8OkT5dOnolY$$EARF4oPVLaxf8JV-TH0IE" : {
       "id" : "AAhn6WIn-o8OkT5dOnolY$$EARF4oPVLaxf8JV-TH0IE",
       "component" : "Target",
@@ -766,23 +892,5 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  },
-  "diagnostics" : [ {
-    "property" : "$.workflow.metainfo.functions.businessRules.rules[0].data[1].outputs[0]",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "Output cannot contain `Any` as data.",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  } ]
+  }
 }

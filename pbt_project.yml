@@ -27,6 +27,7 @@ pipelines:
       outputs:
       - datasets/L0_raw_loan_purpose
       - datasets/L0_raw_product_system
+      - datasets/L0_raw_rule_ID_mapping
       - datasets/L1_raw_origination_system
     subgraphs: []
     dependencies: {}
@@ -42,8 +43,10 @@ pipelines:
       inputs:
       - datasets/L0_raw_loan_purpose
       - datasets/L0_raw_product_system
+      - datasets/L0_raw_rule_ID_mapping
       - datasets/L1_raw_origination_system
-      outputs: []
+      outputs:
+      - datasets/L1_bronze_finance_residential_mortgages
     subgraphs: []
     dependencies: {}
 datasets:
@@ -125,6 +128,32 @@ datasets:
         description: ''
         author: nathan+westpac@prophecy.io
         createdAt: '2024-05-14 23:48:10'
+  datasets/L0_raw_rule_ID_mapping:
+    name: L0_raw_rule_ID_mapping
+    description: ''
+    author: nathan@prophecy.io
+    createdAt: '2024-05-20 02:34:18'
+    mode: batch
+    physicalDatasets:
+      Sales-eng:
+        fabricId: 109
+        datasetType: Database
+        description: ''
+        author: nathan@prophecy.io
+        createdAt: '2024-05-20 02:34:18'
+  datasets/L1_bronze_finance_residential_mortgages:
+    name: L1_bronze_finance_residential_mortgages
+    description: ''
+    author: nathan@prophecy.io
+    createdAt: '2024-05-20 02:36:03'
+    mode: batch
+    physicalDatasets:
+      Sales-eng:
+        fabricId: 109
+        datasetType: Database
+        description: ''
+        author: nathan@prophecy.io
+        createdAt: '2024-05-20 02:36:03'
 templates: {}
 jobs: {}
 gemContainer:
@@ -143,6 +172,14 @@ functions:
     businessRules/Override_Housing_Purpose:
       name: Override_Housing_Purpose
       description: Rule to override housing purposes
+      tags: []
+      inputs: []
+      outputs: []
+      author: nathan@prophecy.io
+      createdAt: '2022-12-15 18:04:50'
+    businessRules/Override_EFS_Residual_Term_Rule_ID:
+      name: Override_EFS_Residual_Term_Rule_ID
+      description: ''
       tags: []
       inputs: []
       outputs: []

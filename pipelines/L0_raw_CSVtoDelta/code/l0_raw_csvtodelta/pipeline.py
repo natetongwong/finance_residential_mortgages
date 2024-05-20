@@ -7,6 +7,8 @@ from prophecy.utils import *
 from l0_raw_csvtodelta.graph import *
 
 def pipeline(spark: SparkSession) -> None:
+    df_create_rule_ID_mapping = create_rule_ID_mapping(spark)
+    L0_raw_rule_ID_mapping(spark, df_create_rule_ID_mapping)
     df_csv_product_system = csv_product_system(spark)
     df_reformatted_data = reformatted_data(spark, df_csv_product_system)
     L0_raw_product_system(spark, df_reformatted_data)
