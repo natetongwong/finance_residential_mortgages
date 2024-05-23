@@ -7,4 +7,4 @@ from l1_bronze_exactandinitialenrichments.config.ConfigStore import *
 from l1_bronze_exactandinitialenrichments.udfs import *
 
 def override_housing_purpose_rule(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    pass
+    return in0.select(expr("*"), Override_Housing_Purpose())

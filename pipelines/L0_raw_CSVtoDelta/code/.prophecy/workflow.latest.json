@@ -12,8 +12,8 @@
     "codeGenConfiguration" : {
       "editableConfig" : true,
       "plibVersion" : {
-        "mavenVersion" : "7.1.100",
-        "pyPiVersion" : "1.8.23"
+        "mavenVersion" : "7.1.95",
+        "pyPiVersion" : "1.8.15"
       }
     },
     "id" : "1",
@@ -382,7 +382,7 @@
         "columnsSelector" : [ "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Opened_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Src_Sys_Code", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##To_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Currency", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##From_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Legal_Entity_Id", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Maturity_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Account_Id", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Current_Balance", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Gl_Account_Id", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Product_Code" ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.14&projectSubscriptionProjectId=224&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },

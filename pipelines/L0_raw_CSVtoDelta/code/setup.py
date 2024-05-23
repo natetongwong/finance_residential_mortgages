@@ -7,7 +7,7 @@ setup(
     package_data = {'prophecy_config_instances' : ['*.json', '*.py', '*.conf']},
     description = 'workflow',
     install_requires = [
-'prophecy-libs==1.8.23'],
+'prophecy-libs==1.8.15'],
     entry_points = {
 'console_scripts' : [
 'main = l0_raw_csvtodelta.pipeline:main'], },

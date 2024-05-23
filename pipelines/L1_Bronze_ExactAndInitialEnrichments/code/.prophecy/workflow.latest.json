@@ -12,8 +12,8 @@
     "codeGenConfiguration" : {
       "editableConfig" : true,
       "plibVersion" : {
-        "mavenVersion" : "7.1.100",
-        "pyPiVersion" : "1.8.23"
+        "mavenVersion" : "7.1.95",
+        "pyPiVersion" : "1.8.15"
       }
     },
     "id" : "1",
@@ -107,6 +107,36 @@
     "target" : "Qbs9VpPQUs85J0AeudPX0$$uC-VFO6qy2tK1D4ypID4g",
     "targetPort" : "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db"
   }, {
+    "id" : "zkrPWGm2_sjpkWUli177X$$tiuxMIC5Vt54gDBrPrVyQ",
+    "source" : "Ly_xPeiHw9ylNKrcgMlrL$$6KpQ4-cBzwMcHjoL-cCz_",
+    "sourcePort" : "Y2AgpJpW2sg5j1XovyZ8-$$upS3g-WhyNV_K2gqE_HGt",
+    "target" : "VibLISU3cHPQFbRZx0EM9$$s5SobM3nzoyO5oYdScICg",
+    "targetPort" : "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N"
+  }, {
+    "id" : "3fKgDDfyyKIO1gnuAZDAD",
+    "source" : "Qbs9VpPQUs85J0AeudPX0$$uC-VFO6qy2tK1D4ypID4g",
+    "sourcePort" : "cd0kHzQ1d1wbws_3eMxh-$$foh6Rp80FQJaC0OWTIxaT",
+    "target" : "-h_IM6HPmjMT_cziQGGzS$$SR3k8Jrwy1HQg7QzFrvRx",
+    "targetPort" : "0lY8SBdI6Hk0x3DNRD5nb$$LqlhYPnPd70N2wwZE1pTD"
+  }, {
+    "id" : "4DhBmt2G3Y8CL2B57U-Ya$$XTlC_faIz6ptnajHGBXIF",
+    "source" : "-h_IM6HPmjMT_cziQGGzS$$SR3k8Jrwy1HQg7QzFrvRx",
+    "sourcePort" : "2jvWnOaLoNZ2uMapJWCDn$$w92EsqXrIMuaNY4L8Xho1",
+    "target" : "Ly_xPeiHw9ylNKrcgMlrL$$6KpQ4-cBzwMcHjoL-cCz_",
+    "targetPort" : "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf"
+  }, {
+    "id" : "gJmOvW7FGOuQnXGOw_-_K$$RjWYZgY7fXZ7P7uQpEdIC",
+    "source" : "VibLISU3cHPQFbRZx0EM9$$s5SobM3nzoyO5oYdScICg",
+    "sourcePort" : "qw8ePJrtTIwvQs4H2DIiv$$L9-HtAwHY5nWpvcZ17HMz",
+    "target" : "Dv3o9LxTW8d38GanfbPMh$$J5eEPUhfHpZjYqro7G71h",
+    "targetPort" : "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom"
+  }, {
+    "id" : "OQvA0C5d1UOnvcUmh7zu0$$nwVZlt3_T8sOr1MZfGz-C",
+    "source" : "Dv3o9LxTW8d38GanfbPMh$$J5eEPUhfHpZjYqro7G71h",
+    "sourcePort" : "JX1MRtjZoy2QPPGh3ziHH$$6WOYkwmt2WCrMh4E17sRR",
+    "target" : "o_oYZzcn0fOc9KeRiHeM5$$s3UrRgvwsfFI3nggnWieW",
+    "targetPort" : "4c9eLKEk7-VbQyKVQ4p8G$$JPnsz1dyrSgx24aToTUw7"
+  }, {
     "id" : "4OIKoUo8dnS4kQjpx1XoQ$$R_SVOfqKgMcj-gI8HTzIx",
     "source" : "o_oYZzcn0fOc9KeRiHeM5$$s3UrRgvwsfFI3nggnWieW",
     "sourcePort" : "4tDdPuAqzE8U06RvuBqFa$$zYZGVKjsmC3HRdPCBuSYS",
@@ -119,50 +149,217 @@
     "target" : "DsrdhiOJD6BYbpY5tN8Yp$$YFNSQhX6ikr-YVS0yGc1Y",
     "targetPort" : "QXoVIHRHwnvIIZ9w1pevb$$-5LQMTMNVlMr2uLYcv1qh"
   }, {
-    "id" : "1vLbUBvqNYUi-NhY5O-9O",
+    "id" : "VcoUjVeq4wp8z7VX6cxVC$$JTCqI0FkfDOyVdVS1xU6b",
     "source" : "0_Uvr1reNTg7Ru64wmear$$AVMa7WCExplRrX4lA2I5D",
     "sourcePort" : "PsJQ9fjqZg4ey2MmyUa_U$$lXE74xgzrVZtRqOIgDh1M",
     "target" : "0rpf9Jzul8Vhf49HFgsVR$$Bk49KsqH9ynVziPSWeUM8",
     "targetPort" : "NNebtjeq79OrzFqSFCAgH$$quP5X3zCliDlt08qFHXjS"
-  }, {
-    "id" : "EZwSGCRp8xnxiMIesPYi_",
-    "source" : "p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc",
-    "sourcePort" : "lxSg8hOnmeFybvQhtjXF7$$OKrMktqoN_6z9vqN53RSP",
-    "target" : "4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh",
-    "targetPort" : "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL"
-  }, {
-    "id" : "14m5GcSMGml9gVMUQRRQx",
-    "source" : "4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh",
-    "sourcePort" : "UuCN1YzkiSuwttTYl5loN$$v4gJmpssWXFYtfATqBiZt",
-    "target" : "DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC",
-    "targetPort" : "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY"
-  }, {
-    "id" : "MZmUtBdEQsmxgO7Aiw_hO",
-    "source" : "-h_IM6HPmjMT_cziQGGzS$$SR3k8Jrwy1HQg7QzFrvRx",
-    "sourcePort" : "2jvWnOaLoNZ2uMapJWCDn$$w92EsqXrIMuaNY4L8Xho1",
-    "target" : "p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc",
-    "targetPort" : "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT"
-  }, {
-    "id" : "p-zRLpCANfURi0EhPnI7R",
-    "source" : "DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC",
-    "sourcePort" : "ReKoxC_2YvNbZaj8leRit$$WvaW_P1nqMnssVGvFS30Q",
-    "target" : "o_oYZzcn0fOc9KeRiHeM5$$s3UrRgvwsfFI3nggnWieW",
-    "targetPort" : "4c9eLKEk7-VbQyKVQ4p8G$$JPnsz1dyrSgx24aToTUw7"
-  }, {
-    "id" : "_L7dAIyPbQd8EOMClN9Nw",
-    "source" : "Qbs9VpPQUs85J0AeudPX0$$uC-VFO6qy2tK1D4ypID4g",
-    "sourcePort" : "cd0kHzQ1d1wbws_3eMxh-$$foh6Rp80FQJaC0OWTIxaT",
-    "target" : "-h_IM6HPmjMT_cziQGGzS$$SR3k8Jrwy1HQg7QzFrvRx",
-    "targetPort" : "0lY8SBdI6Hk0x3DNRD5nb$$LqlhYPnPd70N2wwZE1pTD"
   } ],
   "processes" : {
-    "p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc" : {
-      "id" : "p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc",
+    "skMzrlHDDRn05HRUEwrTt$$HZUdjNCdosWvcDwtfbgqm" : {
+      "id" : "skMzrlHDDRn05HRUEwrTt$$HZUdjNCdosWvcDwtfbgqm",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "raw_loan_purpose",
+        "slug" : "raw_loan_purpose",
+        "x" : -560,
+        "y" : 40,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "hfmCyFcrnF3FnZ8Xbm2PB$$KQSH882HzFJ0loYuFOeei",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/L0_raw_loan_purpose"
+      }
+    },
+    "KpldcYto1a5eQMnCOT69S$$zW217GlgjUcmcAJB5_LXG" : {
+      "id" : "KpldcYto1a5eQMnCOT69S$$zW217GlgjUcmcAJB5_LXG",
+      "component" : "Lookup",
+      "metadata" : {
+        "label" : "loan_purpose_lookup",
+        "slug" : "loan_purpose_lookup",
+        "x" : -200,
+        "y" : 40,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "XTUgB-PJZFvHbaWpa9ojf$$eBkTtZ9qf-vQQYOXyMkYM",
+          "slug" : "L0_raw_loan_purpose",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Src_Sys_Cd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : " Secnd_Purps_Type_Lbl",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Src_Lending_Purpose_Desc",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Predominant_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose_Housing",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose_Personal",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose_Business",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose_Leases",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "isRange" : false,
+        "processName" : "loanpurpose",
+        "keyColumns" : [ "Src_Sys_Cd", " Secnd_Purps_Type_Lbl" ],
+        "valueColumns" : [ "Predominant_Purpose", "Housing_Purpose", "Sub_Purpose_Housing", "Sub_Purpose_Personal" ]
+      }
+    },
+    "ksn0cQRRJGH2FWfx2OrIj$$rS8eqKTuQw0NLSAo5S-Bo" : {
+      "id" : "ksn0cQRRJGH2FWfx2OrIj$$rS8eqKTuQw0NLSAo5S-Bo",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "read_raw_rule_id_mapping",
+        "slug" : "read_raw_rule_id_mapping",
+        "x" : -560,
+        "y" : 240,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Kf7YpvGy26BnrmhLKNXDM$$GdKeOHbEPHU4gTCN_zYrP",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/L0_raw_rule_ID_mapping"
+      }
+    },
+    "HRMicwak-LczVBY9ppwK7$$dOtNyWUdXL3oGLK6Xruz5" : {
+      "id" : "HRMicwak-LczVBY9ppwK7$$dOtNyWUdXL3oGLK6Xruz5",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "L0_raw_origination_system",
+        "slug" : "L0_raw_origination_system",
+        "x" : -560,
+        "y" : -160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "sF0T2SkwSQjCIlzLBxd8V$$_STxEnJFgSdl070LwHP_0",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/L1_raw_origination_system"
+      }
+    },
+    "Ly_xPeiHw9ylNKrcgMlrL$$6KpQ4-cBzwMcHjoL-cCz_" : {
+      "id" : "Ly_xPeiHw9ylNKrcgMlrL$$6KpQ4-cBzwMcHjoL-cCz_",
       "component" : "Reformat",
       "metadata" : {
         "label" : "Update_Column_Names",
         "slug" : "Update_Column_Names",
-        "x" : 80,
+        "x" : 120,
         "y" : -240,
         "phase" : 0,
         "cache" : false,
@@ -171,11 +368,232 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT",
-          "slug" : "by_account_id"
+          "id" : "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf",
+          "slug" : "by_account_id",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "From_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Src_Sys_Code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_Code",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gl_Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Legal_Entity_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Current_Balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Maturity_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Opened_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Currency",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "From_Date2",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date2",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AppIn_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Origination_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Prim_Purps_Type_Lbl",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Secnd_Purps_Type_Lbl",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Crncy_Code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Apprv_Lmt_Amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Predominant_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_purpose_Rule_ID",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
         } ],
         "outputs" : [ {
-          "id" : "lxSg8hOnmeFybvQhtjXF7$$OKrMktqoN_6z9vqN53RSP",
+          "id" : "Y2AgpJpW2sg5j1XovyZ8-$$upS3g-WhyNV_K2gqE_HGt",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
@@ -334,407 +752,11 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##Secnd_Purps_Type_Lbl", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##EFS_Housing_Purpose", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##Opened_Date", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##Prim_Purps_Type_Lbl", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##Account_Id", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##Predominant_Purpose", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##Legal_Entity_Id", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##Gl_Account_Id", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##Src_Sys_Code", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##Sub_Purpose", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##Origination_system", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##Currency", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##Housing_Purpose", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##To_Date", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##Apprv_Lmt_Amt", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##Product_Code", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##From_Date", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##Current_Balance", "2z4xi389zAqLXICGIm2C0$$tl8YltHL3Oh3-cGUltFaT##Maturity_Date" ]
+        "columnsSelector" : [ "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##Maturity_Date", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##Legal_Entity_Id", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##Secnd_Purps_Type_Lbl", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##Current_Balance", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##Opened_Date", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##Currency", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##From_Date", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##Account_Id", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##EFS_Housing_Purpose", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##Prim_Purps_Type_Lbl", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##To_Date", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##Predominant_Purpose", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##Apprv_Lmt_Amt", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##Origination_system", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##Gl_Account_Id", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##Housing_Purpose", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##Sub_Purpose", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##Product_Code", "6wcU0glb1b4YgYYDuQ2qK$$vZWYMO7uu6SSYbR0hAkaf##Src_Sys_Code" ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.14&projectSubscriptionProjectId=224&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
-      }
-    },
-    "skMzrlHDDRn05HRUEwrTt$$HZUdjNCdosWvcDwtfbgqm" : {
-      "id" : "skMzrlHDDRn05HRUEwrTt$$HZUdjNCdosWvcDwtfbgqm",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "raw_loan_purpose",
-        "slug" : "raw_loan_purpose",
-        "x" : -560,
-        "y" : -720,
-        "phase" : -1,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "hfmCyFcrnF3FnZ8Xbm2PB$$KQSH882HzFJ0loYuFOeei",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/L0_raw_loan_purpose"
-      }
-    },
-    "4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh" : {
-      "id" : "4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "reformat_update_column_names",
-        "slug" : "reformat_update_column_names",
-        "x" : 240,
-        "y" : -240,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL",
-          "slug" : "Update_Column_Names"
-        } ],
-        "outputs" : [ {
-          "id" : "UuCN1YzkiSuwttTYl5loN$$v4gJmpssWXFYtfATqBiZt",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
-        "expressions" : [ {
-          "target" : "Process_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Process_Date"
-          },
-          "description" : ""
-        }, {
-          "target" : "From_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "From_Date"
-          },
-          "description" : ""
-        }, {
-          "target" : "To_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "To_Date"
-          },
-          "description" : ""
-        }, {
-          "target" : "Account_Id",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Account_Id"
-          },
-          "description" : ""
-        }, {
-          "target" : "Product_system",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Product_system"
-          },
-          "description" : ""
-        }, {
-          "target" : "Product_Code",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Product_Code"
-          },
-          "description" : ""
-        }, {
-          "target" : "Gl_Account_Id",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Gl_Account_Id"
-          },
-          "description" : ""
-        }, {
-          "target" : "Legal_Entity_Id",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Legal_Entity_Id"
-          },
-          "description" : ""
-        }, {
-          "target" : "Current_Balance",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Current_Balance"
-          },
-          "description" : ""
-        }, {
-          "target" : "Maturity_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Maturity_Date"
-          },
-          "description" : ""
-        }, {
-          "target" : "Opened_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Opened_Date"
-          },
-          "description" : ""
-        }, {
-          "target" : "Currency",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Currency"
-          },
-          "description" : ""
-        }, {
-          "target" : "Origination_system",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Origination_system"
-          },
-          "description" : ""
-        }, {
-          "target" : "Prim_Purps_Type_Lbl",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Prim_Purps_Type_Lbl"
-          },
-          "description" : ""
-        }, {
-          "target" : "Secnd_Purps_Type_Lbl",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Secnd_Purps_Type_Lbl"
-          },
-          "description" : ""
-        }, {
-          "target" : "Apprv_Lmt_Amt",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Apprv_Lmt_Amt"
-          },
-          "description" : ""
-        }, {
-          "target" : "Predominant_Purpose",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Predominant_Purpose"
-          },
-          "description" : ""
-        }, {
-          "target" : "EFS_Housing_Purpose",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "EFS_Housing_Purpose"
-          },
-          "description" : ""
-        }, {
-          "target" : "Sub_Purpose",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Sub_Purpose"
-          },
-          "description" : ""
-        }, {
-          "target" : "EFS_Housing_purpose_Rule_ID",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "EFS_Housing_purpose_Rule_ID"
-          },
-          "description" : ""
-        }, {
-          "target" : "Residual_days",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "datediff(Maturity_Date, Process_Date)"
-          },
-          "description" : ""
-        }, {
-          "target" : "Residual_years",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "(datediff(Maturity_Date, Process_Date) / 365.0D)"
-          },
-          "description" : ""
-        }, {
-          "target" : "Housing_Purpose",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Housing_Purpose"
-          },
-          "description" : ""
-        } ],
-        "importString" : "",
-        "activeTab" : "expressions",
-        "columnsSelector" : [ "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Account_Id", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Currency", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Secnd_Purps_Type_Lbl", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##EFS_Housing_purpose_Rule_ID", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Predominant_Purpose", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Process_Date", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Legal_Entity_Id", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##From_Date", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Product_system", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Housing_Purpose", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Prim_Purps_Type_Lbl", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Opened_Date", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Sub_Purpose", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Product_Code", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Origination_system", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Current_Balance", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Maturity_Date", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Apprv_Lmt_Amt", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##To_Date", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##Gl_Account_Id", "Xj5jFIvLaCPvFlB3eBDEK$$alAmeNOlZSOMNKaGItpoL##EFS_Housing_Purpose" ]
-      },
-      "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.14&projectSubscriptionProjectId=224&path=gems/Reformat",
-        "projectName" : "ProphecySparkBasicsPython"
-      }
-    },
-    "KpldcYto1a5eQMnCOT69S$$zW217GlgjUcmcAJB5_LXG" : {
-      "id" : "KpldcYto1a5eQMnCOT69S$$zW217GlgjUcmcAJB5_LXG",
-      "component" : "Lookup",
-      "metadata" : {
-        "label" : "loan_purpose_lookup",
-        "slug" : "loan_purpose_lookup",
-        "x" : -200,
-        "y" : -720,
-        "phase" : -1,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "XTUgB-PJZFvHbaWpa9ojf$$eBkTtZ9qf-vQQYOXyMkYM",
-          "slug" : "L0_raw_loan_purpose",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "Src_Sys_Cd",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : " Secnd_Purps_Type_Lbl",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Src_Lending_Purpose_Desc",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Predominant_Purpose",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Housing_Purpose",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Sub_Purpose_Housing",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Sub_Purpose_Personal",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Sub_Purpose_Business",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Sub_Purpose_Leases",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "isRange" : false,
-        "processName" : "loanpurpose",
-        "keyColumns" : [ "Src_Sys_Cd", " Secnd_Purps_Type_Lbl" ],
-        "valueColumns" : [ "Predominant_Purpose", "Housing_Purpose", "Sub_Purpose_Housing", "Sub_Purpose_Personal" ]
-      }
-    },
-    "ksn0cQRRJGH2FWfx2OrIj$$rS8eqKTuQw0NLSAo5S-Bo" : {
-      "id" : "ksn0cQRRJGH2FWfx2OrIj$$rS8eqKTuQw0NLSAo5S-Bo",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "read_raw_rule_id_mapping",
-        "slug" : "read_raw_rule_id_mapping",
-        "x" : -560,
-        "y" : -520,
-        "phase" : -1,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "Kf7YpvGy26BnrmhLKNXDM$$GdKeOHbEPHU4gTCN_zYrP",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/L0_raw_rule_ID_mapping"
-      }
-    },
-    "HRMicwak-LczVBY9ppwK7$$dOtNyWUdXL3oGLK6Xruz5" : {
-      "id" : "HRMicwak-LczVBY9ppwK7$$dOtNyWUdXL3oGLK6Xruz5",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "L0_raw_origination_system",
-        "slug" : "L0_raw_origination_system",
-        "x" : -560,
-        "y" : -160,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "sF0T2SkwSQjCIlzLBxd8V$$_STxEnJFgSdl070LwHP_0",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/L1_raw_origination_system"
       }
     },
     "evFRERUUMouVosDSJAJXQ$$R_Jfu2rC9islLJfQWi2Zx" : {
@@ -945,10 +967,10 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##Secnd_Purps_Type_Lbl", "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##Apprv_Lmt_Amt", "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##Crncy_Code", "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##AppIn_Id", "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##From_Date", "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##Src_Sys_Code", "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##Prim_Purps_Type_Lbl", "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##Account_Id", "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##To_Date" ]
+        "columnsSelector" : [ "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##To_Date", "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##Src_Sys_Code", "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##From_Date", "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##Crncy_Code", "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##Secnd_Purps_Type_Lbl", "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##Account_Id", "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##Prim_Purps_Type_Lbl", "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##AppIn_Id", "exkZMdlllTJmNH8Woo66K$$0ghKXC7CfNUyq7XtNCx9U##Apprv_Lmt_Amt" ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.14&projectSubscriptionProjectId=224&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -959,7 +981,7 @@
         "label" : "reformatted_data",
         "slug" : "reformatted_data",
         "x" : -380,
-        "y" : -720,
+        "y" : 40,
         "phase" : -1,
         "cache" : false,
         "detailedStats" : false,
@@ -1132,10 +1154,10 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Housing_Purpose", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Src_Sys_Cd", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Sub_Purpose_Personal", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Src_Lending_Purpose_Cd", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Predominant_Purpose", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Sub_Purpose_Leases", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Sub_Purpose_Housing", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Sub_Purpose_Business", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Src_Lending_Purpose_Desc" ]
+        "columnsSelector" : [ "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Sub_Purpose_Personal", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Predominant_Purpose", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Sub_Purpose_Leases", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Src_Sys_Cd", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Sub_Purpose_Housing", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Src_Lending_Purpose_Desc", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Src_Lending_Purpose_Cd", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Sub_Purpose_Business", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Housing_Purpose" ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.14&projectSubscriptionProjectId=224&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -1145,7 +1167,7 @@
       "metadata" : {
         "label" : "Reformat_1",
         "slug" : "Reformat_1",
-        "x" : 720,
+        "x" : 760,
         "y" : -240,
         "phase" : 0,
         "cache" : false,
@@ -1155,7 +1177,237 @@
       "ports" : {
         "inputs" : [ {
           "id" : "EyIthp6mC-oDSTzFDWMyo$$0MVEWkDMXkiPOFM2-eJrD",
-          "slug" : "add_efs_rule_id"
+          "slug" : "add_efs_rule_id",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Process_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "From_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_Code",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gl_Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Legal_Entity_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Current_Balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Maturity_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Opened_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Currency",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Origination_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Prim_Purps_Type_Lbl",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Secnd_Purps_Type_Lbl",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Apprv_Lmt_Amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Predominant_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_purpose_Rule_ID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Residual_days",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Residual_years",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Residual_Term",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Residual_Term_Rule_ID",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
         } ],
         "outputs" : [ {
           "id" : "PsJQ9fjqZg4ey2MmyUa_U$$lXE74xgzrVZtRqOIgDh1M",
@@ -1173,7 +1425,7 @@
         "columnsSelector" : [ ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.14&projectSubscriptionProjectId=224&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -1183,7 +1435,7 @@
       "metadata" : {
         "label" : "by_account_id",
         "slug" : "by_account_id",
-        "x" : -220,
+        "x" : -180,
         "y" : -240,
         "phase" : 0,
         "cache" : false,
@@ -1639,13 +1891,13 @@
         } ],
         "allIn1" : null,
         "activeTab" : "expressions",
-        "columnsSelector" : [ "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Account_Id", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Account_Id", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Currency", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Opened_Date", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Maturity_Date", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##EFS_Housing_purpose_Rule_ID", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Src_Sys_Code", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Crncy_Code", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Product_Code", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Sub_Purpose", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Predominant_Purpose", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##To_Date", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##From_Date", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Account_Id", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##To_Date", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Housing_Purpose", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Current_Balance", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Prim_Purps_Type_Lbl", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Gl_Account_Id", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Apprv_Lmt_Amt", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##AppIn_Id", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Legal_Entity_Id", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Src_Sys_Code", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##From_Date", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Secnd_Purps_Type_Lbl" ],
+        "columnsSelector" : [ "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Account_Id", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Account_Id", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##To_Date", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Secnd_Purps_Type_Lbl", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Predominant_Purpose", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##From_Date", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Opened_Date", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##From_Date", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Maturity_Date", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##EFS_Housing_purpose_Rule_ID", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Account_Id", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Legal_Entity_Id", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Housing_Purpose", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Src_Sys_Code", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##To_Date", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Product_Code", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Src_Sys_Code", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Sub_Purpose", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Currency", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Current_Balance", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##AppIn_Id", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Apprv_Lmt_Amt", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Prim_Purps_Type_Lbl", "9nxmP5bZoSVsoiTzxo-Cd$$rY_Y7azBqg6Kx-jUYg4db##Gl_Account_Id", "z14_kdaHehi1JAnQqFwqY$$GsEKX-5YEBd0yzKNTlOWc##Crncy_Code" ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.14&projectSubscriptionProjectId=224&path=gems/Join",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/Join",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -1656,7 +1908,7 @@
         "label" : "rule_check_lookup",
         "slug" : "rule_check_lookup",
         "x" : -380,
-        "y" : -520,
+        "y" : 240,
         "phase" : -1,
         "cache" : false,
         "detailedStats" : false,
@@ -1738,219 +1990,13 @@
         "datasetId" : "datasets/L0_raw_product_system"
       }
     },
-    "DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC" : {
-      "id" : "DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "reformatted_account_details",
-        "slug" : "reformatted_account_details",
-        "x" : 400,
-        "y" : -240,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY",
-          "slug" : "reformat_update_column_names"
-        } ],
-        "outputs" : [ {
-          "id" : "ReKoxC_2YvNbZaj8leRit$$WvaW_P1nqMnssVGvFS30Q",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
-        "expressions" : [ {
-          "target" : "Process_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Process_Date"
-          },
-          "description" : ""
-        }, {
-          "target" : "From_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "From_Date"
-          },
-          "description" : ""
-        }, {
-          "target" : "To_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "To_Date"
-          },
-          "description" : ""
-        }, {
-          "target" : "Account_Id",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Account_Id"
-          },
-          "description" : ""
-        }, {
-          "target" : "Product_system",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Product_system"
-          },
-          "description" : ""
-        }, {
-          "target" : "Product_Code",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Product_Code"
-          },
-          "description" : ""
-        }, {
-          "target" : "Gl_Account_Id",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Gl_Account_Id"
-          },
-          "description" : ""
-        }, {
-          "target" : "Legal_Entity_Id",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Legal_Entity_Id"
-          },
-          "description" : ""
-        }, {
-          "target" : "Current_Balance",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Current_Balance"
-          },
-          "description" : ""
-        }, {
-          "target" : "Maturity_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Maturity_Date"
-          },
-          "description" : ""
-        }, {
-          "target" : "Opened_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Opened_Date"
-          },
-          "description" : ""
-        }, {
-          "target" : "Currency",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Currency"
-          },
-          "description" : ""
-        }, {
-          "target" : "Origination_system",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Origination_system"
-          },
-          "description" : ""
-        }, {
-          "target" : "Prim_Purps_Type_Lbl",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Prim_Purps_Type_Lbl"
-          },
-          "description" : ""
-        }, {
-          "target" : "Secnd_Purps_Type_Lbl",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Secnd_Purps_Type_Lbl"
-          },
-          "description" : ""
-        }, {
-          "target" : "Apprv_Lmt_Amt",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Apprv_Lmt_Amt"
-          },
-          "description" : ""
-        }, {
-          "target" : "Predominant_Purpose",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Predominant_Purpose"
-          },
-          "description" : ""
-        }, {
-          "target" : "EFS_Housing_Purpose",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "EFS_Housing_Purpose"
-          },
-          "description" : ""
-        }, {
-          "target" : "Sub_Purpose",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Sub_Purpose"
-          },
-          "description" : ""
-        }, {
-          "target" : "EFS_Housing_purpose_Rule_ID",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "EFS_Housing_purpose_Rule_ID"
-          },
-          "description" : ""
-        }, {
-          "target" : "Residual_days",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Residual_days"
-          },
-          "description" : ""
-        }, {
-          "target" : "Residual_years",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Residual_years"
-          },
-          "description" : ""
-        }, {
-          "target" : "EFS_Residual_Term",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "case\nwhen Residual_years >0 and Residual_years <1 then \"Short Term\"\nwhen Residual_years >1 then \"Long Term\"\nelse \"Long Term\"\nend"
-          },
-          "description" : ""
-        }, {
-          "target" : "Housing_Purpose",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Housing_Purpose"
-          },
-          "description" : ""
-        } ],
-        "importString" : "",
-        "activeTab" : "expressions",
-        "columnsSelector" : [ "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Gl_Account_Id", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Opened_Date", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Sub_Purpose", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Prim_Purps_Type_Lbl", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Current_Balance", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Currency", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Residual_days", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Predominant_Purpose", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##To_Date", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Product_Code", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Housing_Purpose", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##From_Date", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Account_Id", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Origination_system", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Residual_years", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Legal_Entity_Id", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Apprv_Lmt_Amt", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##EFS_Housing_purpose_Rule_ID", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Secnd_Purps_Type_Lbl", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Maturity_Date", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##EFS_Housing_Purpose", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Product_system", "8mA3gw-vqcI_DA7qQfC_y$$gYn9I4hSwbCu25DUYg-jY##Process_Date" ]
-      },
-      "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.14&projectSubscriptionProjectId=224&path=gems/Reformat",
-        "projectName" : "ProphecySparkBasicsPython"
-      }
-    },
     "-h_IM6HPmjMT_cziQGGzS$$SR3k8Jrwy1HQg7QzFrvRx" : {
       "id" : "-h_IM6HPmjMT_cziQGGzS$$SR3k8Jrwy1HQg7QzFrvRx",
       "component" : "SchemaTransform",
       "metadata" : {
         "label" : "override_housing_purpose_rule",
         "slug" : "override_housing_purpose_rule",
-        "x" : -80,
+        "x" : -40,
         "y" : -240,
         "phase" : 0,
         "cache" : false,
@@ -2229,7 +2275,7 @@
         "columnsSelector" : [ ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.14&projectSubscriptionProjectId=224&path=gems/SchemaTransform",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/SchemaTransform",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -2239,7 +2285,7 @@
       "metadata" : {
         "label" : "add_efs_rule_id",
         "slug" : "add_efs_rule_id",
-        "x" : 560,
+        "x" : 600,
         "y" : -240,
         "phase" : 0,
         "cache" : false,
@@ -2249,7 +2295,228 @@
       "ports" : {
         "inputs" : [ {
           "id" : "4c9eLKEk7-VbQyKVQ4p8G$$JPnsz1dyrSgx24aToTUw7",
-          "slug" : "reformatted_account_details"
+          "slug" : "reformatted_account_details",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Process_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "From_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_Code",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gl_Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Legal_Entity_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Current_Balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Maturity_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Opened_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Currency",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Origination_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Prim_Purps_Type_Lbl",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Secnd_Purps_Type_Lbl",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Apprv_Lmt_Amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Predominant_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_purpose_Rule_ID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Residual_days",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Residual_years",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Residual_Term",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
         } ],
         "outputs" : [ {
           "id" : "4tDdPuAqzE8U06RvuBqFa$$zYZGVKjsmC3HRdPCBuSYS",
@@ -2303,7 +2570,7 @@
         "columnsSelector" : [ ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.14&projectSubscriptionProjectId=224&path=gems/SchemaTransform",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/SchemaTransform",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -2313,7 +2580,7 @@
       "metadata" : {
         "label" : "L1_bronze_finance_residential_mortgages",
         "slug" : "L1_bronze_finance_residential_mortgages",
-        "x" : 880,
+        "x" : 920,
         "y" : -240,
         "phase" : 0,
         "cache" : false,
@@ -2323,7 +2590,237 @@
       "ports" : {
         "inputs" : [ {
           "id" : "NNebtjeq79OrzFqSFCAgH$$quP5X3zCliDlt08qFHXjS",
-          "slug" : "Reformat_1"
+          "slug" : "Reformat_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Process_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "From_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_Code",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gl_Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Legal_Entity_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Current_Balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Maturity_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Opened_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Currency",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Origination_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Prim_Purps_Type_Lbl",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Secnd_Purps_Type_Lbl",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Apprv_Lmt_Amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Predominant_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_purpose_Rule_ID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Residual_days",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Residual_years",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Residual_Term",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Residual_Term_Rule_ID",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ],
@@ -2333,6 +2830,817 @@
       "properties" : {
         "datasetId" : "datasets/L1_bronze_finance_residential_mortgages"
       }
+    },
+    "VibLISU3cHPQFbRZx0EM9$$s5SobM3nzoyO5oYdScICg" : {
+      "id" : "VibLISU3cHPQFbRZx0EM9$$s5SobM3nzoyO5oYdScICg",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "reformat_update_column_names",
+        "slug" : "reformat_update_column_names",
+        "x" : 280,
+        "y" : -240,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N",
+          "slug" : "Update_Column_Names",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Process_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "From_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_Code",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gl_Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Legal_Entity_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Current_Balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Maturity_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Opened_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Currency",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Origination_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Prim_Purps_Type_Lbl",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Secnd_Purps_Type_Lbl",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Apprv_Lmt_Amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Predominant_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_purpose_Rule_ID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "qw8ePJrtTIwvQs4H2DIiv$$L9-HtAwHY5nWpvcZ17HMz",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "Process_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Process_Date"
+          },
+          "description" : ""
+        }, {
+          "target" : "From_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "From_Date"
+          },
+          "description" : ""
+        }, {
+          "target" : "To_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "To_Date"
+          },
+          "description" : ""
+        }, {
+          "target" : "Account_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Account_Id"
+          },
+          "description" : ""
+        }, {
+          "target" : "Product_system",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Product_system"
+          },
+          "description" : ""
+        }, {
+          "target" : "Product_Code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Product_Code"
+          },
+          "description" : ""
+        }, {
+          "target" : "Gl_Account_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Gl_Account_Id"
+          },
+          "description" : ""
+        }, {
+          "target" : "Legal_Entity_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Legal_Entity_Id"
+          },
+          "description" : ""
+        }, {
+          "target" : "Current_Balance",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Current_Balance"
+          },
+          "description" : ""
+        }, {
+          "target" : "Maturity_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Maturity_Date"
+          },
+          "description" : ""
+        }, {
+          "target" : "Opened_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Opened_Date"
+          },
+          "description" : ""
+        }, {
+          "target" : "Currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Currency"
+          },
+          "description" : ""
+        }, {
+          "target" : "Origination_system",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Origination_system"
+          },
+          "description" : ""
+        }, {
+          "target" : "Prim_Purps_Type_Lbl",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Prim_Purps_Type_Lbl"
+          },
+          "description" : ""
+        }, {
+          "target" : "Secnd_Purps_Type_Lbl",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Secnd_Purps_Type_Lbl"
+          },
+          "description" : ""
+        }, {
+          "target" : "Apprv_Lmt_Amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Apprv_Lmt_Amt"
+          },
+          "description" : ""
+        }, {
+          "target" : "Predominant_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Predominant_Purpose"
+          },
+          "description" : ""
+        }, {
+          "target" : "EFS_Housing_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "EFS_Housing_Purpose"
+          },
+          "description" : ""
+        }, {
+          "target" : "Sub_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Sub_Purpose"
+          },
+          "description" : ""
+        }, {
+          "target" : "EFS_Housing_purpose_Rule_ID",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "EFS_Housing_purpose_Rule_ID"
+          },
+          "description" : ""
+        }, {
+          "target" : "Residual_days",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "datediff(Maturity_Date, Process_Date)"
+          },
+          "description" : ""
+        }, {
+          "target" : "Residual_years",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "(datediff(Maturity_Date, Process_Date) / 365.0D)"
+          },
+          "description" : ""
+        }, {
+          "target" : "Housing_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Housing_Purpose"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Current_Balance", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Origination_system", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Account_Id", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Predominant_Purpose", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Sub_Purpose", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Apprv_Lmt_Amt", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Housing_Purpose", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Secnd_Purps_Type_Lbl", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Legal_Entity_Id", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##EFS_Housing_purpose_Rule_ID", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Product_system", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Opened_Date", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##To_Date", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Process_Date", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##From_Date", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##EFS_Housing_Purpose", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Currency", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Product_Code", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Prim_Purps_Type_Lbl", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Gl_Account_Id", "AUg6RAIThkZKGyDdC1HME$$ZHYLjEySu7YWwK6JgGs0N##Maturity_Date" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "Dv3o9LxTW8d38GanfbPMh$$J5eEPUhfHpZjYqro7G71h" : {
+      "id" : "Dv3o9LxTW8d38GanfbPMh$$J5eEPUhfHpZjYqro7G71h",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "reformatted_account_details",
+        "slug" : "reformatted_account_details",
+        "x" : 440,
+        "y" : -240,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom",
+          "slug" : "reformat_update_column_names",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Process_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "From_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_Code",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gl_Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Legal_Entity_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Current_Balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Maturity_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Opened_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Currency",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Origination_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Prim_Purps_Type_Lbl",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Secnd_Purps_Type_Lbl",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Apprv_Lmt_Amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Predominant_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_purpose_Rule_ID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Residual_days",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Residual_years",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "JX1MRtjZoy2QPPGh3ziHH$$6WOYkwmt2WCrMh4E17sRR",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "Process_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Process_Date"
+          },
+          "description" : ""
+        }, {
+          "target" : "From_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "From_Date"
+          },
+          "description" : ""
+        }, {
+          "target" : "To_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "To_Date"
+          },
+          "description" : ""
+        }, {
+          "target" : "Account_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Account_Id"
+          },
+          "description" : ""
+        }, {
+          "target" : "Product_system",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Product_system"
+          },
+          "description" : ""
+        }, {
+          "target" : "Product_Code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Product_Code"
+          },
+          "description" : ""
+        }, {
+          "target" : "Gl_Account_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Gl_Account_Id"
+          },
+          "description" : ""
+        }, {
+          "target" : "Legal_Entity_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Legal_Entity_Id"
+          },
+          "description" : ""
+        }, {
+          "target" : "Current_Balance",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Current_Balance"
+          },
+          "description" : ""
+        }, {
+          "target" : "Maturity_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Maturity_Date"
+          },
+          "description" : ""
+        }, {
+          "target" : "Opened_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Opened_Date"
+          },
+          "description" : ""
+        }, {
+          "target" : "Currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Currency"
+          },
+          "description" : ""
+        }, {
+          "target" : "Origination_system",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Origination_system"
+          },
+          "description" : ""
+        }, {
+          "target" : "Prim_Purps_Type_Lbl",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Prim_Purps_Type_Lbl"
+          },
+          "description" : ""
+        }, {
+          "target" : "Secnd_Purps_Type_Lbl",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Secnd_Purps_Type_Lbl"
+          },
+          "description" : ""
+        }, {
+          "target" : "Apprv_Lmt_Amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Apprv_Lmt_Amt"
+          },
+          "description" : ""
+        }, {
+          "target" : "Predominant_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Predominant_Purpose"
+          },
+          "description" : ""
+        }, {
+          "target" : "EFS_Housing_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "EFS_Housing_Purpose"
+          },
+          "description" : ""
+        }, {
+          "target" : "Sub_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Sub_Purpose"
+          },
+          "description" : ""
+        }, {
+          "target" : "EFS_Housing_purpose_Rule_ID",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "EFS_Housing_purpose_Rule_ID"
+          },
+          "description" : ""
+        }, {
+          "target" : "Residual_days",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Residual_days"
+          },
+          "description" : ""
+        }, {
+          "target" : "Residual_years",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Residual_years"
+          },
+          "description" : ""
+        }, {
+          "target" : "EFS_Residual_Term",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "case\nwhen Residual_years >0 and Residual_years <1 then \"Short Term\"\nwhen Residual_years >1 then \"Long Term\"\nelse \"Long Term\"\nend"
+          },
+          "description" : ""
+        }, {
+          "target" : "Housing_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Housing_Purpose"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Product_Code", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##From_Date", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Currency", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Account_Id", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Opened_Date", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Prim_Purps_Type_Lbl", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Maturity_Date", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Housing_Purpose", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Origination_system", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Legal_Entity_Id", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Apprv_Lmt_Amt", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Product_system", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Current_Balance", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Secnd_Purps_Type_Lbl", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Process_Date", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Gl_Account_Id", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Residual_days", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Sub_Purpose", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##To_Date", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##EFS_Housing_purpose_Rule_ID", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Residual_years", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##Predominant_Purpose", "nCuDHRlCxXuQpaE7tP0u5$$BXSgCBBtXMHwh4111pUom##EFS_Housing_Purpose" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
     }
   },
   "ports" : {
@@ -2341,1332 +3649,5 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  },
-  "diagnostics" : [ {
-    "property" : "$.workflow.processes.-h_IM6HPmjMT_cziQGGzS$$SR3k8Jrwy1HQg7QzFrvRx.-h_IM6HPmjMT_cziQGGzS$$SR3k8Jrwy1HQg7QzFrvRx",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "handling of PMapProperty(Map(AddRule -> PMapProperty(Map(expression -> PMapProperty(Map(format -> PStringProperty(sql), expression -> PStringProperty(Override_Housing_Purpose()))), param_errors -> PListProperty(List(PMapProperty(Map(paramName -> PStringProperty(Secnd_Purps_Type_Lbl), hasError -> PBooleanProperty(false))), PMapProperty(Map(paramName -> PStringProperty(Origination_system), hasError -> PBooleanProperty(false))), PMapProperty(Map(paramName -> PStringProperty(Housing_Purpose), hasError -> PBooleanProperty(false))))))), MissingColumn -> PMapProperty(Map(sourceColumn -> PStringProperty(), defaultValue -> PMapProperty(Map(expression -> PStringProperty(), format -> PStringProperty(python))))), DropColumn -> PMapProperty(Map(sourceColumn -> PStringProperty())), kind -> PStringProperty(AddRule), RenameColumn -> PMapProperty(Map(sourceColumn -> PStringProperty(), targetColumn -> PStringProperty())), AddReplaceColumn -> PMapProperty(Map(sourceColumn -> PStringProperty(), expression -> PMapProperty(Map(expression -> PStringProperty(), format -> PStringProperty(python))))))) and PUnionPropertySpec(Transformation,List(PUnionElementPropertySpec(PStructPropertySpec(MissingColumn,List(PStructFieldPropertySpec(sourceColumn,PSStringPropertySpec(),true,Some(PStringProperty()),PropertySpecMetadata(None,None)), PStructFieldPropertySpec(defaultValue,PSColumnPropertySpec(),true,Some(PMapProperty(Map(expression -> PStringProperty(), format -> PStringProperty(python)))),PropertySpecMetadata(None,None)))),PropertySpecMetadata(None,None)), PUnionElementPropertySpec(PStructPropertySpec(DropColumn,List(PStructFieldPropertySpec(sourceColumn,PSStringPropertySpec(),true,Some(PStringProperty()),PropertySpecMetadata(None,None)))),PropertySpecMetadata(None,None)), PUnionElementPropertySpec(PStructPropertySpec(RenameColumn,List(PStructFieldPropertySpec(sourceColumn,PSStringPropertySpec(),true,Some(PStringProperty()),PropertySpecMetadata(None,None)), PStructFieldPropertySpec(targetColumn,PSStringPropertySpec(),true,Some(PStringProperty()),PropertySpecMetadata(None,None)))),PropertySpecMetadata(None,None)), PUnionElementPropertySpec(PStructPropertySpec(AddReplaceColumn,List(PStructFieldPropertySpec(sourceColumn,PSStringPropertySpec(),true,Some(PStringProperty()),PropertySpecMetadata(None,None)), PStructFieldPropertySpec(expression,PSColumnPropertySpec(),true,Some(PMapProperty(Map(expression -> PStringProperty(), format -> PStringProperty(python)))),PropertySpecMetadata(None,None)))),PropertySpecMetadata(None,None)))) is not supported",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "One of the upstream gems is broken. Please, fix it first.",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[0].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column From_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[1].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column From_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[2].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column To_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[3].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Account_Id",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[4].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Src_Sys_Code",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[5].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Product_Code",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[6].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Gl_Account_Id",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[7].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Legal_Entity_Id",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[8].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Current_Balance",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[9].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Maturity_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[10].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Opened_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[11].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Currency",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[12].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Origination_system",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[13].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Prim_Purps_Type_Lbl",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[14].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Secnd_Purps_Type_Lbl",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[15].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Apprv_Lmt_Amt",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[16].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Predominant_Purpose",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[17].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column EFS_Housing_Purpose",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[18].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Sub_Purpose",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[19].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column EFS_Housing_Purpose",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.p5e4cTX6oO0f1EuppDISK$$l1JbsLCTe1ugZSajy1IKc.properties.expressions[20].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Housing_Purpose",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "One of the upstream gems is broken. Please, fix it first.",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[0].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Process_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[1].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column From_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[2].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column To_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[3].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Account_Id",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[4].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Product_system",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[5].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Product_Code",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[6].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Gl_Account_Id",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[7].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Legal_Entity_Id",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[8].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Current_Balance",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[9].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Maturity_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[10].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Opened_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[11].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Currency",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[12].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Origination_system",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[13].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Prim_Purps_Type_Lbl",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[14].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Secnd_Purps_Type_Lbl",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[15].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Apprv_Lmt_Amt",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[16].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Predominant_Purpose",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[17].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column EFS_Housing_Purpose",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[18].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Sub_Purpose",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[19].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column EFS_Housing_purpose_Rule_ID",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[20].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Process_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[20].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Maturity_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[21].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Process_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[21].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Maturity_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.4Mf_brT55YCg2bKT1L--x$$5O3RsYLhDLyKxrhL9yqCh.properties.expressions[22].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Housing_Purpose",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "One of the upstream gems is broken. Please, fix it first.",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[0].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Process_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[1].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column From_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[2].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column To_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[3].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Account_Id",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[4].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Product_system",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[5].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Product_Code",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[6].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Gl_Account_Id",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[7].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Legal_Entity_Id",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[8].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Current_Balance",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[9].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Maturity_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[10].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Opened_Date",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[11].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Currency",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[12].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Origination_system",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[13].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Prim_Purps_Type_Lbl",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[14].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Secnd_Purps_Type_Lbl",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[15].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Apprv_Lmt_Amt",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[16].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Predominant_Purpose",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[17].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column EFS_Housing_Purpose",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[18].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Sub_Purpose",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[19].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column EFS_Housing_purpose_Rule_ID",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[20].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Residual_days",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[21].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Residual_years",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[22].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Residual_years",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DFML_9Lljw7uWbk-53QYy$$ZTvpG5_2XmUBzCrpOk4hC.properties.expressions[23].expression.expression",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "No match found for column Housing_Purpose",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.o_oYZzcn0fOc9KeRiHeM5$$s3UrRgvwsfFI3nggnWieW",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "One of the upstream gems is broken. Please, fix it first.",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.o_oYZzcn0fOc9KeRiHeM5$$s3UrRgvwsfFI3nggnWieW.o_oYZzcn0fOc9KeRiHeM5$$s3UrRgvwsfFI3nggnWieW",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "handling of PMapProperty(Map(AddRule -> PMapProperty(Map(expression -> PMapProperty(Map(format -> PStringProperty(sql), expression -> PStringProperty(Override_EFS_Residual_Term_Rule_ID()))), param_errors -> PListProperty(List(PMapProperty(Map(paramName -> PStringProperty(Residual_years), hasError -> PBooleanProperty(false))), PMapProperty(Map(paramName -> PStringProperty(Maturity_Date), hasError -> PBooleanProperty(false))))))), MissingColumn -> PMapProperty(Map(sourceColumn -> PStringProperty(), defaultValue -> PMapProperty(Map(expression -> PStringProperty(), format -> PStringProperty(python))))), DropColumn -> PMapProperty(Map(sourceColumn -> PStringProperty())), kind -> PStringProperty(AddRule), RenameColumn -> PMapProperty(Map(sourceColumn -> PStringProperty(), targetColumn -> PStringProperty())), AddReplaceColumn -> PMapProperty(Map(sourceColumn -> PStringProperty(), expression -> PMapProperty(Map(expression -> PStringProperty(), format -> PStringProperty(python))))))) and PUnionPropertySpec(Transformation,List(PUnionElementPropertySpec(PStructPropertySpec(MissingColumn,List(PStructFieldPropertySpec(sourceColumn,PSStringPropertySpec(),true,Some(PStringProperty()),PropertySpecMetadata(None,None)), PStructFieldPropertySpec(defaultValue,PSColumnPropertySpec(),true,Some(PMapProperty(Map(expression -> PStringProperty(), format -> PStringProperty(python)))),PropertySpecMetadata(None,None)))),PropertySpecMetadata(None,None)), PUnionElementPropertySpec(PStructPropertySpec(DropColumn,List(PStructFieldPropertySpec(sourceColumn,PSStringPropertySpec(),true,Some(PStringProperty()),PropertySpecMetadata(None,None)))),PropertySpecMetadata(None,None)), PUnionElementPropertySpec(PStructPropertySpec(RenameColumn,List(PStructFieldPropertySpec(sourceColumn,PSStringPropertySpec(),true,Some(PStringProperty()),PropertySpecMetadata(None,None)), PStructFieldPropertySpec(targetColumn,PSStringPropertySpec(),true,Some(PStringProperty()),PropertySpecMetadata(None,None)))),PropertySpecMetadata(None,None)), PUnionElementPropertySpec(PStructPropertySpec(AddReplaceColumn,List(PStructFieldPropertySpec(sourceColumn,PSStringPropertySpec(),true,Some(PStringProperty()),PropertySpecMetadata(None,None)), PStructFieldPropertySpec(expression,PSColumnPropertySpec(),true,Some(PMapProperty(Map(expression -> PStringProperty(), format -> PStringProperty(python)))),PropertySpecMetadata(None,None)))),PropertySpecMetadata(None,None)))) is not supported",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.0_Uvr1reNTg7Ru64wmear$$AVMa7WCExplRrX4lA2I5D",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "One of the upstream gems is broken. Please, fix it first.",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.0rpf9Jzul8Vhf49HFgsVR$$Bk49KsqH9ynVziPSWeUM8",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "One of the upstream gems is broken. Please, fix it first.",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  } ]
+  }
 }
