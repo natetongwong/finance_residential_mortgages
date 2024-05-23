@@ -168,8 +168,8 @@ functions:
   businessRules: {}
 subgraphs:
   subgraphs/Ruleset1:
-    name: Ruleset1
-    description: ''
+    name: Enrichments
+    description: 'Reusable component for enriching data. '
     author: nathan@prophecy.io
     language: python
     artefactID: ''
