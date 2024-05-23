@@ -3,14 +3,14 @@ schema:
   type: struct
   fields:
   - name: From_Date
-    type: string
+    type: date
     nullable: true
     metadata:
       description: ''
       mappings: []
       tags: []
   - name: To_Date
-    type: string
+    type: date
     nullable: true
     metadata:
       description: ''
@@ -23,7 +23,7 @@ schema:
       description: ''
       mappings: []
       tags: []
-  - name: Src_Sys_Code
+  - name: Src_Sys_Cd
     type: string
     nullable: true
     metadata:

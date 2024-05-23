@@ -12,10 +12,11 @@ def pipeline(spark: SparkSession) -> None:
     df_csv_product_system = csv_product_system(spark)
     df_reformatted_data = reformatted_data(spark, df_csv_product_system)
     L0_raw_product_system(spark, df_reformatted_data)
+    df_csv_origination_system = csv_origination_system(spark)
+    df_reformatted_csv_origination_system = reformatted_csv_origination_system(spark, df_csv_origination_system)
     df_csv_loan_purpose = csv_loan_purpose(spark)
     L0_raw_loan_purpose(spark, df_csv_loan_purpose)
-    df_csv_origination_system = csv_origination_system(spark)
-    L1_raw_origination_system(spark, df_csv_origination_system)
+    L0_raw_origination_system(spark, df_reformatted_csv_origination_system)
 
 def main():
     spark = SparkSession.builder\
