@@ -12,8 +12,8 @@
     "codeGenConfiguration" : {
       "editableConfig" : true,
       "plibVersion" : {
-        "mavenVersion" : "8.0.5",
-        "pyPiVersion" : "1.9.4"
+        "mavenVersion" : "7.1.100",
+        "pyPiVersion" : "1.8.23"
       }
     },
     "id" : "1",
@@ -30,7 +30,7 @@
       "language" : "python",
       "udfs" : [ ],
       "functionPackageName" : "pocwestpac.financeresidentialmortgages.functions",
-      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions", "westpacbusiness.ruleset10overridehousingpurpose.functions" ]
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
     },
     "udafs" : {
       "language" : "python",
@@ -64,24 +64,6 @@
       "projectUID" : "225",
       "projectName" : "ProphecyWarehousePython",
       "externalDependencies" : [ ]
-    }, {
-      "projectUID" : "262",
-      "projectName" : "Ruleset_Finance_Residential_Mortgages",
-      "externalDependencies" : [ {
-        "type" : "plibMaven",
-        "modifiedAt" : "2024-05-23T21:10:57.805406Z",
-        "name" : "plibMaven",
-        "version" : "7.1.100",
-        "id" : "757731159",
-        "createdAt" : "2024-05-23T21:10:57.805375Z"
-      }, {
-        "type" : "plibPypi",
-        "modifiedAt" : "2024-05-23T21:10:57.805442Z",
-        "name" : "plibPypi",
-        "version" : "1.8.23",
-        "id" : "1307381560",
-        "createdAt" : "2024-05-23T21:10:57.805433Z"
-      } ]
     } ],
     "isImported" : false,
     "interimMode" : "Full",
@@ -112,30 +94,6 @@
     "sourcePort" : "Kf7YpvGy26BnrmhLKNXDM$$GdKeOHbEPHU4gTCN_zYrP",
     "target" : "DsrdhiOJD6BYbpY5tN8Yp$$YFNSQhX6ikr-YVS0yGc1Y",
     "targetPort" : "QXoVIHRHwnvIIZ9w1pevb$$-5LQMTMNVlMr2uLYcv1qh"
-  }, {
-    "id" : "23UeJF1b0GfCoBhEkTqKi$$atA29HJXGAZFdJSAYu6fi",
-    "source" : "TLcngPO2_B1QZpQYdGALc$$zwRsePAD3TpUncNgJLK-G",
-    "sourcePort" : "D5rSbxa0viMT76lae7HbO$$rloHdSfydOUEOBVonJ461",
-    "target" : "g9DDlGip_Re3CfMAVdLlp$$pWyIDfFvvKnV378HGZiaI",
-    "targetPort" : "oTz51mHPg6dijzSw6HX9T$$lNS8RmUoXjSao9lAtZe6W"
-  }, {
-    "id" : "OSgNZmERmkzcU8naVCOGr",
-    "source" : "yTDnyDMITligP9SPWS5Fa$$w77K6OtoWU0ngvfmKb4xI",
-    "sourcePort" : "9derfL7ZDoEb7QtzuB6PI$$TgZzFsW9rFMYAapQzq6F0",
-    "target" : "g9DDlGip_Re3CfMAVdLlp$$pWyIDfFvvKnV378HGZiaI",
-    "targetPort" : "beVjcCOyun2dvJYNg6Bcg$$LIEIPohQl15_8JYai7Mof"
-  }, {
-    "id" : "4fIA6Oe8fTEJSlBJkT2t2$$eEt8mQlwkHtnZ206HIoTe",
-    "source" : "g9DDlGip_Re3CfMAVdLlp$$pWyIDfFvvKnV378HGZiaI",
-    "sourcePort" : "6WEclZHD7z1e2EJfeqGea$$EgGHOK3_KmMua9GexST0Y",
-    "target" : "S4Pfkduk0ZCTeKALDRuUV$$Q024wghic49KvSZT0V09O",
-    "targetPort" : "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR"
-  }, {
-    "id" : "TPwo5EwFEtrc3L4PpSATI$$wIj84M8TaywJu7hsP---1",
-    "source" : "S4Pfkduk0ZCTeKALDRuUV$$Q024wghic49KvSZT0V09O",
-    "sourcePort" : "7_YbuQeDowYGFPU0Zf3XF$$PNdJruCKac0oNUggaQnVL",
-    "target" : "yDwigc37ty8Ka0lcX98UU$$PrxhrwmmR_Sl1J1haeOU6",
-    "targetPort" : "A_lnz3MulMs0ZXd0Th3p6$$OY5HkrkezQYKGRCrWWERB"
   } ],
   "processes" : {
     "skMzrlHDDRn05HRUEwrTt$$HZUdjNCdosWvcDwtfbgqm" : {
@@ -181,7 +139,93 @@
       "ports" : {
         "inputs" : [ {
           "id" : "XTUgB-PJZFvHbaWpa9ojf$$eBkTtZ9qf-vQQYOXyMkYM",
-          "slug" : "L0_raw_loan_purpose"
+          "slug" : "L0_raw_loan_purpose",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Src_Sys_Cd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : " Secnd_Purps_Type_Lbl",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Src_Lending_Purpose_Desc",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Predominant_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose_Housing",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose_Personal",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose_Business",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose_Leases",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ],
@@ -222,466 +266,6 @@
         "datasetId" : "datasets/L0_raw_rule_ID_mapping"
       }
     },
-    "yDwigc37ty8Ka0lcX98UU$$PrxhrwmmR_Sl1J1haeOU6" : {
-      "id" : "yDwigc37ty8Ka0lcX98UU$$PrxhrwmmR_Sl1J1haeOU6",
-      "component" : "AddRule",
-      "metadata" : {
-        "label" : "add_override_housing_purpose",
-        "slug" : "add_override_housing_purpose",
-        "x" : -40,
-        "y" : -240,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "A_lnz3MulMs0ZXd0Th3p6$$OY5HkrkezQYKGRCrWWERB",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "WAu4I_BLn39ImYRuI4p3i$$A8nhVVvEUiAh9_zNE13s3",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "importLanguage" : "sql",
-        "importString" : "",
-        "transformations" : [ {
-          "AddRule" : {
-            "expression" : {
-              "format" : "sql",
-              "expression" : "Override_Housing_Purpose()"
-            },
-            "param_errors" : [ {
-              "paramName" : "Secnd_Purps_Type_Lbl",
-              "hasError" : false
-            }, {
-              "paramName" : "Origination_system",
-              "hasError" : false
-            }, {
-              "paramName" : "Housing_Purpose",
-              "hasError" : false
-            } ]
-          },
-          "MissingColumn" : {
-            "sourceColumn" : "",
-            "defaultValue" : {
-              "expression" : "",
-              "format" : "python"
-            }
-          },
-          "DropColumn" : {
-            "sourceColumn" : ""
-          },
-          "kind" : "AddRule",
-          "RenameColumn" : {
-            "sourceColumn" : "",
-            "targetColumn" : ""
-          },
-          "AddReplaceColumn" : {
-            "sourceColumn" : "",
-            "expression" : {
-              "expression" : "",
-              "format" : "python"
-            }
-          }
-        } ],
-        "activeTab" : "transformations",
-        "columnsSelector" : [ ]
-      },
-      "componentInfo" : {
-        "gemId" : "gitUri=https://github.com/natetongwong/ruleset10_OverrideHousingPurpose&subPath=/&tag=Ruleset_Finance_Residential_Mortgages/2.1&projectSubscriptionProjectId=262&path=gems/AddRule",
-        "projectName" : "Ruleset_Finance_Residential_Mortgages"
-      }
-    },
-    "S4Pfkduk0ZCTeKALDRuUV$$Q024wghic49KvSZT0V09O" : {
-      "id" : "S4Pfkduk0ZCTeKALDRuUV$$Q024wghic49KvSZT0V09O",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "reformatted_loan_data",
-        "slug" : "reformatted_loan_data",
-        "x" : -200,
-        "y" : -240,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "7_YbuQeDowYGFPU0Zf3XF$$PNdJruCKac0oNUggaQnVL",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
-        "expressions" : [ {
-          "target" : "From_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "From_Date"
-          },
-          "description" : ""
-        }, {
-          "target" : "To_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "To_Date"
-          },
-          "description" : ""
-        }, {
-          "target" : "AppIn_Id",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "AppIn_Id"
-          },
-          "description" : ""
-        }, {
-          "target" : "Origination_System",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Src_Sys_Cd"
-          },
-          "description" : ""
-        }, {
-          "target" : "Prim_Purps_Type_Lbl",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Prim_Purps_Type_Lbl"
-          },
-          "description" : ""
-        }, {
-          "target" : "Secnd_Purps_Type_Lbl",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Secnd_Purps_Type_Lbl"
-          },
-          "description" : ""
-        }, {
-          "target" : "Crncy_Code",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Crncy_Code"
-          },
-          "description" : ""
-        }, {
-          "target" : "Apprv_Lmt_Amt",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Apprv_Lmt_Amt"
-          },
-          "description" : ""
-        }, {
-          "target" : "Account_Id",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Account_Id"
-          },
-          "description" : ""
-        }, {
-          "target" : "Product_System",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Src_Sys_Code"
-          },
-          "description" : ""
-        }, {
-          "target" : "Product_Code",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Product_Code"
-          },
-          "description" : ""
-        }, {
-          "target" : "Gl_Account_Id",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Gl_Account_Id"
-          },
-          "description" : ""
-        }, {
-          "target" : "Legal_Entity_Id",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Legal_Entity_Id"
-          },
-          "description" : ""
-        }, {
-          "target" : "Current_Balance",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Current_Balance"
-          },
-          "description" : ""
-        }, {
-          "target" : "Maturity_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Maturity_Date"
-          },
-          "description" : ""
-        }, {
-          "target" : "Opened_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Opened_Date"
-          },
-          "description" : ""
-        }, {
-          "target" : "Currency",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "Currency"
-          },
-          "description" : ""
-        }, {
-          "target" : "Predominant_Purpose",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "loanpurpose(Src_Sys_Cd, Secnd_Purps_Type_Lbl)['Predominant_Purpose']"
-          },
-          "description" : ""
-        }, {
-          "target" : "Housing_Purpose",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "loanpurpose(Src_Sys_Cd, Secnd_Purps_Type_Lbl)['Housing_Purpose']"
-          },
-          "description" : ""
-        }, {
-          "target" : "Sub_Purpose_Housing",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "loanpurpose(Src_Sys_Cd, Secnd_Purps_Type_Lbl)['Sub_Purpose_Housing']"
-          },
-          "description" : ""
-        }, {
-          "target" : "Sub_Purpose_Personal",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "loanpurpose(Src_Sys_Cd, Secnd_Purps_Type_Lbl)['Sub_Purpose_Personal']"
-          },
-          "description" : ""
-        } ],
-        "importString" : "",
-        "activeTab" : "expressions",
-        "columnsSelector" : [ "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##Secnd_Purps_Type_Lbl", "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##Apprv_Lmt_Amt", "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##To_Date", "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##AppIn_Id", "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##Src_Sys_Code", "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##Legal_Entity_Id", "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##Currency", "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##Opened_Date", "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##Prim_Purps_Type_Lbl", "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##Account_Id", "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##Maturity_Date", "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##Src_Sys_Cd", "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##Current_Balance", "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##Product_Code", "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##Gl_Account_Id", "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##From_Date", "twF0xWLnheADdDwH1WJgM$$JCvuVcRyhZrt9cm1hp8IR##Crncy_Code" ]
-      },
-      "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/Reformat",
-        "projectName" : "ProphecySparkBasicsPython"
-      }
-    },
-    "g9DDlGip_Re3CfMAVdLlp$$pWyIDfFvvKnV378HGZiaI" : {
-      "id" : "g9DDlGip_Re3CfMAVdLlp$$pWyIDfFvvKnV378HGZiaI",
-      "component" : "Join",
-      "metadata" : {
-        "label" : "join_accounts_data",
-        "slug" : "join_accounts_data",
-        "x" : -360,
-        "y" : -240,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "oTz51mHPg6dijzSw6HX9T$$lNS8RmUoXjSao9lAtZe6W",
-          "slug" : "in0"
-        }, {
-          "id" : "beVjcCOyun2dvJYNg6Bcg$$LIEIPohQl15_8JYai7Mof",
-          "slug" : "in1"
-        } ],
-        "outputs" : [ {
-          "id" : "6WEclZHD7z1e2EJfeqGea$$EgGHOK3_KmMua9GexST0Y",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "conditions" : [ {
-          "alias" : "in1",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.Account_Id = in1.Account_Id"
-          },
-          "joinType" : "inner"
-        } ],
-        "expressions" : [ {
-          "target" : "From_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.From_Date"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "To_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.To_Date"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "AppIn_Id",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.AppIn_Id"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Src_Sys_Cd",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.Src_Sys_Cd"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Prim_Purps_Type_Lbl",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.Prim_Purps_Type_Lbl"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Secnd_Purps_Type_Lbl",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.Secnd_Purps_Type_Lbl"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Crncy_Code",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.Crncy_Code"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Apprv_Lmt_Amt",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.Apprv_Lmt_Amt"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Account_Id",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in0.Account_Id"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Src_Sys_Code",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.Src_Sys_Code"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Product_Code",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.Product_Code"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Gl_Account_Id",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.Gl_Account_Id"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Legal_Entity_Id",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.Legal_Entity_Id"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Current_Balance",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.Current_Balance"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Maturity_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.Maturity_Date"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Opened_Date",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.Opened_Date"
-          },
-          "description" : "",
-          "_row_id" : null
-        }, {
-          "target" : "Currency",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "in1.Currency"
-          },
-          "description" : "",
-          "_row_id" : null
-        } ],
-        "hints" : [ {
-          "id" : "oTz51mHPg6dijzSw6HX9T$$lNS8RmUoXjSao9lAtZe6W",
-          "alias" : "in0",
-          "hintType" : "none",
-          "propagateColumns" : false
-        }, {
-          "id" : "beVjcCOyun2dvJYNg6Bcg$$LIEIPohQl15_8JYai7Mof",
-          "alias" : "in1",
-          "hintType" : "none",
-          "propagateColumns" : false
-        } ],
-        "allIn1" : null,
-        "activeTab" : "conditions",
-        "columnsSelector" : [ "oTz51mHPg6dijzSw6HX9T$$lNS8RmUoXjSao9lAtZe6W##Account_Id", "beVjcCOyun2dvJYNg6Bcg$$LIEIPohQl15_8JYai7Mof##Account_Id", "oTz51mHPg6dijzSw6HX9T$$lNS8RmUoXjSao9lAtZe6W##Secnd_Purps_Type_Lbl", "beVjcCOyun2dvJYNg6Bcg$$LIEIPohQl15_8JYai7Mof##Currency", "beVjcCOyun2dvJYNg6Bcg$$LIEIPohQl15_8JYai7Mof##Maturity_Date", "oTz51mHPg6dijzSw6HX9T$$lNS8RmUoXjSao9lAtZe6W##Prim_Purps_Type_Lbl", "oTz51mHPg6dijzSw6HX9T$$lNS8RmUoXjSao9lAtZe6W##Src_Sys_Cd", "oTz51mHPg6dijzSw6HX9T$$lNS8RmUoXjSao9lAtZe6W##Crncy_Code", "oTz51mHPg6dijzSw6HX9T$$lNS8RmUoXjSao9lAtZe6W##Account_Id", "beVjcCOyun2dvJYNg6Bcg$$LIEIPohQl15_8JYai7Mof##Gl_Account_Id", "oTz51mHPg6dijzSw6HX9T$$lNS8RmUoXjSao9lAtZe6W##Apprv_Lmt_Amt", "beVjcCOyun2dvJYNg6Bcg$$LIEIPohQl15_8JYai7Mof##Opened_Date", "beVjcCOyun2dvJYNg6Bcg$$LIEIPohQl15_8JYai7Mof##Src_Sys_Code", "beVjcCOyun2dvJYNg6Bcg$$LIEIPohQl15_8JYai7Mof##Legal_Entity_Id", "beVjcCOyun2dvJYNg6Bcg$$LIEIPohQl15_8JYai7Mof##To_Date", "beVjcCOyun2dvJYNg6Bcg$$LIEIPohQl15_8JYai7Mof##Current_Balance", "beVjcCOyun2dvJYNg6Bcg$$LIEIPohQl15_8JYai7Mof##From_Date", "oTz51mHPg6dijzSw6HX9T$$lNS8RmUoXjSao9lAtZe6W##AppIn_Id", "beVjcCOyun2dvJYNg6Bcg$$LIEIPohQl15_8JYai7Mof##Product_Code" ],
-        "allIn0" : null,
-        "whereClause" : null,
-        "headAlias" : "in0"
-      },
-      "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/Join",
-        "projectName" : "ProphecySparkBasicsPython"
-      }
-    },
     "KlKQb8h52I8yjqvHuKiEE$$5PpK1gwxkhY1R5mlBNeqF" : {
       "id" : "KlKQb8h52I8yjqvHuKiEE$$5PpK1gwxkhY1R5mlBNeqF",
       "component" : "Reformat",
@@ -698,7 +282,93 @@
       "ports" : {
         "inputs" : [ {
           "id" : "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX",
-          "slug" : "in0"
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Src_Sys_Cd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Src_Lending_Purpose_Cd",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Src_Lending_Purpose_Desc",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Predominant_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose_Housing",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose_Personal",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose_Business",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose_Leases",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
         } ],
         "outputs" : [ {
           "id" : "tDDbR8AHSjEbkdmzWLjY1$$iugrOYnbXtIGO_hPuGjva",
@@ -783,33 +453,6 @@
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
-    "yTDnyDMITligP9SPWS5Fa$$w77K6OtoWU0ngvfmKb4xI" : {
-      "id" : "yTDnyDMITligP9SPWS5Fa$$w77K6OtoWU0ngvfmKb4xI",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "L0_raw_product_system",
-        "slug" : "L0_raw_product_system",
-        "x" : -560,
-        "y" : -160,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "9derfL7ZDoEb7QtzuB6PI$$TgZzFsW9rFMYAapQzq6F0",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/L0_raw_product_system"
-      }
-    },
     "DsrdhiOJD6BYbpY5tN8Yp$$YFNSQhX6ikr-YVS0yGc1Y" : {
       "id" : "DsrdhiOJD6BYbpY5tN8Yp$$YFNSQhX6ikr-YVS0yGc1Y",
       "component" : "Lookup",
@@ -826,7 +469,39 @@
       "ports" : {
         "inputs" : [ {
           "id" : "QXoVIHRHwnvIIZ9w1pevb$$-5LQMTMNVlMr2uLYcv1qh",
-          "slug" : "in0"
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "EFS_Housing_Purpose",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_purpose_Rule_ID",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Rule_Name",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ],
@@ -839,33 +514,6 @@
         "keyColumns" : [ "EFS_Housing_Purpose" ],
         "valueColumns" : [ "EFS_Housing_purpose_Rule_ID", "Rule_Name" ]
       }
-    },
-    "TLcngPO2_B1QZpQYdGALc$$zwRsePAD3TpUncNgJLK-G" : {
-      "id" : "TLcngPO2_B1QZpQYdGALc$$zwRsePAD3TpUncNgJLK-G",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "L0_raw_origination_system",
-        "slug" : "L0_raw_origination_system",
-        "x" : -560,
-        "y" : -320,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "D5rSbxa0viMT76lae7HbO$$rloHdSfydOUEOBVonJ461",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/L1_raw_origination_system"
-      }
     }
   },
   "ports" : {
@@ -874,176 +522,5 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  },
-  "diagnostics" : [ {
-    "property" : "$.workflow.processes.skMzrlHDDRn05HRUEwrTt$$HZUdjNCdosWvcDwtfbgqm.properties.format",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "format: catalogTable not supported",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.KlKQb8h52I8yjqvHuKiEE$$5PpK1gwxkhY1R5mlBNeqF",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "Could not find the spec for Reformat",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.KpldcYto1a5eQMnCOT69S$$zW217GlgjUcmcAJB5_LXG",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "One of the upstream gems is broken. Please, fix it first.",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.ksn0cQRRJGH2FWfx2OrIj$$rS8eqKTuQw0NLSAo5S-Bo.properties.format",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "format: catalogTable not supported",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.DsrdhiOJD6BYbpY5tN8Yp$$YFNSQhX6ikr-YVS0yGc1Y",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "One of the upstream gems is broken. Please, fix it first.",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.TLcngPO2_B1QZpQYdGALc$$zwRsePAD3TpUncNgJLK-G.properties.format",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "format: catalogTable not supported",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.yTDnyDMITligP9SPWS5Fa$$w77K6OtoWU0ngvfmKb4xI.properties.format",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "format: catalogTable not supported",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.g9DDlGip_Re3CfMAVdLlp$$pWyIDfFvvKnV378HGZiaI",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "Could not find the spec for Join",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.S4Pfkduk0ZCTeKALDRuUV$$Q024wghic49KvSZT0V09O",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "Could not find the spec for Reformat",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  }, {
-    "property" : "$.workflow.processes.yDwigc37ty8Ka0lcX98UU$$PrxhrwmmR_Sl1J1haeOU6",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "Could not find the spec for AddRule",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  } ]
+  }
 }
