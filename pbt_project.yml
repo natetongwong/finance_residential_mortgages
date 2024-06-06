@@ -42,7 +42,9 @@ pipelines:
     datasets:
       inputs:
       - datasets/L0_raw_loan_purpose
+      - datasets/L0_raw_product_system
       - datasets/L0_raw_rule_ID_mapping
+      - datasets/L1_raw_origination_system
       outputs: []
     subgraphs: []
     dependencies: {}
@@ -185,34 +187,42 @@ sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
 - type: plibMaven
-  modifiedAt: '2024-05-23T01:36:28.008742Z'
+  modifiedAt: '2024-06-06T00:07:35.162798Z'
   name: plibMaven
-  version: 7.1.100
-  id: '301823199'
-  createdAt: '2024-05-23T01:36:28.008712Z'
+  version: 8.0.5
+  id: '558884257'
+  createdAt: '2024-06-06T00:07:35.162752Z'
 - type: plibPypi
-  modifiedAt: '2024-05-23T01:36:28.008787Z'
+  modifiedAt: '2024-06-06T00:07:35.16283Z'
   name: plibPypi
-  version: 1.8.23
-  id: '1839287552'
-  createdAt: '2024-05-23T01:36:28.008777Z'
+  version: 1.9.4
+  id: '847750883'
+  createdAt: '2024-06-06T00:07:35.162823Z'
 projectDependencies:
   '224':
     projectUID: 224
     projectName: ProphecySparkBasicsPython
     repositoryPath: gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=
-    version: 0.2.17.dev
+    version: 0.2.24.dev3
     isDefault: true
     author: null
-    createdAt: '2024-05-18 21:11:29'
+    createdAt: '2024-06-06 00:08:09'
   '225':
     projectUID: 225
     projectName: ProphecyWarehousePython
     repositoryPath: gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_225.git&subPath=
-    version: 0.0.6.dev
+    version: 0.0.7.dev3
     isDefault: true
     author: null
-    createdAt: '2024-05-18 21:11:35'
+    createdAt: '2024-06-06 00:08:15'
+  '262':
+    projectUID: 262
+    projectName: Ruleset_Finance_Residential_Mortgages
+    repositoryPath: gitUri=https://github.com/natetongwong/ruleset10_OverrideHousingPurpose&subPath=/
+    version: Ruleset_Finance_Residential_Mortgages/2.1
+    isDefault: false
+    author: null
+    createdAt: '2024-05-24 01:14:37'
 flags:
   shouldAddDefaultDependenciesIfAbsent: true
 pipelineConfigurations: {}
