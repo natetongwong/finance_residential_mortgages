@@ -1,0 +1,731 @@
+{
+  "id" : "1ozp92XLv88v7zrEW623b",
+  "component" : "Subgraph",
+  "metadata" : {
+    "label" : "",
+    "slug" : "",
+    "x" : 0,
+    "y" : 0,
+    "phase" : 0,
+    "cache" : false,
+    "detailedStats" : false,
+    "isImported" : false,
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "comment" : "Calculates fields including process_date, residual_years, residual_days, and EFS_residual_term"
+  },
+  "ports" : {
+    "inputs" : [ {
+      "id" : "l6_TgHaCrTaudbbM5npZh",
+      "slug" : "by_account_id"
+    } ],
+    "outputs" : [ {
+      "id" : "XftQQvNfi7R8QvgoVIjeX",
+      "slug" : "out"
+    } ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "properties" : {
+    "packageName" : "Ruleset1"
+  },
+  "connections" : [ {
+    "id" : "l-1fyccMfYTiCP-V1Zz_V",
+    "source" : "Ly_xPeiHw9ylNKrcgMlrL",
+    "sourcePort" : "Y2AgpJpW2sg5j1XovyZ8-",
+    "target" : "VibLISU3cHPQFbRZx0EM9",
+    "targetPort" : "AUg6RAIThkZKGyDdC1HME"
+  }, {
+    "id" : "Ic006FP4Cp8BdVWVm18xU",
+    "source" : "VibLISU3cHPQFbRZx0EM9",
+    "sourcePort" : "qw8ePJrtTIwvQs4H2DIiv",
+    "target" : "Dv3o9LxTW8d38GanfbPMh",
+    "targetPort" : "nCuDHRlCxXuQpaE7tP0u5"
+  }, {
+    "id" : "ITTxD3O1THemULnzMj8WY",
+    "source" : "1ozp92XLv88v7zrEW623b",
+    "sourcePort" : "l6_TgHaCrTaudbbM5npZh",
+    "target" : "Ly_xPeiHw9ylNKrcgMlrL",
+    "targetPort" : "6wcU0glb1b4YgYYDuQ2qK"
+  }, {
+    "id" : "bHOAjHYZMoxsl9D1CN5xe",
+    "source" : "Dv3o9LxTW8d38GanfbPMh",
+    "sourcePort" : "JX1MRtjZoy2QPPGh3ziHH",
+    "target" : "1ozp92XLv88v7zrEW623b",
+    "targetPort" : "XftQQvNfi7R8QvgoVIjeX"
+  } ],
+  "processes" : {
+    "Ly_xPeiHw9ylNKrcgMlrL" : {
+      "id" : "Ly_xPeiHw9ylNKrcgMlrL",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Add_ProcessDate",
+        "slug" : "Add_ProcessDate",
+        "x" : 120,
+        "y" : -240,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Calculates \"Process_Date\" based on recent month-end date. "
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "6wcU0glb1b4YgYYDuQ2qK",
+          "slug" : "by_account_id"
+        } ],
+        "outputs" : [ {
+          "id" : "Y2AgpJpW2sg5j1XovyZ8-",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "Process_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "CASE\nWHEN From_Date = last_day(From_Date) THEN From_Date\nELSE last_day(date_sub(From_Date, 30))\nEND"
+          },
+          "description" : "",
+          "_row_id" : "1379381791"
+        }, {
+          "target" : "From_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "From_Date"
+          },
+          "description" : "",
+          "_row_id" : "355743287"
+        }, {
+          "target" : "To_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "To_Date"
+          },
+          "description" : "",
+          "_row_id" : "143842616"
+        }, {
+          "target" : "Account_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Account_Id"
+          },
+          "description" : "",
+          "_row_id" : "829385559"
+        }, {
+          "target" : "Product_system",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Product_System"
+          },
+          "description" : "",
+          "_row_id" : "479353477"
+        }, {
+          "target" : "Product_Code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Product_Code"
+          },
+          "description" : "",
+          "_row_id" : "973554055"
+        }, {
+          "target" : "Gl_Account_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Gl_Account_Id"
+          },
+          "description" : "",
+          "_row_id" : "440963939"
+        }, {
+          "target" : "Legal_Entity_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Legal_Entity_Id"
+          },
+          "description" : "",
+          "_row_id" : "1657713321"
+        }, {
+          "target" : "Current_Balance",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Current_Balance"
+          },
+          "description" : "",
+          "_row_id" : "693015112"
+        }, {
+          "target" : "Maturity_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Maturity_Date"
+          },
+          "description" : "",
+          "_row_id" : "1625612639"
+        }, {
+          "target" : "Opened_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Opened_Date"
+          },
+          "description" : "",
+          "_row_id" : "1172721689"
+        }, {
+          "target" : "Currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Currency"
+          },
+          "description" : "",
+          "_row_id" : "233272913"
+        }, {
+          "target" : "Origination_system",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Origination_system"
+          },
+          "description" : "",
+          "_row_id" : "1578235525"
+        }, {
+          "target" : "Prim_Purps_Type_Lbl",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Prim_Purps_Type_Lbl"
+          },
+          "description" : "",
+          "_row_id" : "1591591581"
+        }, {
+          "target" : "Secnd_Purps_Type_Lbl",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Secnd_Purps_Type_Lbl"
+          },
+          "description" : "",
+          "_row_id" : "386633638"
+        }, {
+          "target" : "Apprv_Lmt_Amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Apprv_Lmt_Amt"
+          },
+          "description" : "",
+          "_row_id" : "1020647391"
+        }, {
+          "target" : "Predominant_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Predominant_Purpose"
+          },
+          "description" : "",
+          "_row_id" : "236045918"
+        }, {
+          "target" : "EFS_Housing_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "EFS_Housing_Purpose"
+          },
+          "description" : "",
+          "_row_id" : "637721427"
+        }, {
+          "target" : "Sub_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Sub_Purpose_Housing"
+          },
+          "description" : "",
+          "_row_id" : "1063430696"
+        }, {
+          "target" : "EFS_Housing_purpose_Rule_ID",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "rulecheck(EFS_Housing_Purpose)['EFS_Housing_purpose_Rule_ID']"
+          },
+          "description" : "",
+          "_row_id" : "697822677"
+        }, {
+          "target" : "Housing_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Housing_Purpose"
+          },
+          "description" : "",
+          "_row_id" : "1647035486"
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##Prim_Purps_Type_Lbl", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##Secnd_Purps_Type_Lbl", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##From_Date", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##Current_Balance", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##Maturity_Date", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##Housing_Purpose", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##EFS_Housing_Purpose", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##Origination_System", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##Currency", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##Legal_Entity_Id", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##Opened_Date", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##Product_Code", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##Account_Id", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##Sub_Purpose_Housing", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##Product_System", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##Gl_Account_Id", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##To_Date", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##Apprv_Lmt_Amt", "6wcU0glb1b4YgYYDuQ2qK$$jF9Dul5bjmt4jL-zTcy04$$6zmZlsnB6MhTJr9Ijod4S$$RRHKpKar0-q2o3Ud6TaEA$$eRuDPShinX0FyQSUeKh6H$$z9jQN2wui_MwK4qkxNqyi$$Yso65fndXu6fIf5LEUFBP##Predominant_Purpose" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/Reformat",
+        "projectId" : "224",
+        "projectName" : "ProphecySparkBasicsPython",
+        "version" : "0.2.17.dev"
+      }
+    },
+    "VibLISU3cHPQFbRZx0EM9" : {
+      "id" : "VibLISU3cHPQFbRZx0EM9",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Add_ResidualColumns",
+        "slug" : "Add_ResidualColumns",
+        "x" : 280,
+        "y" : -240,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Calculate:\n\nResidual Days = Maturity_Date - Process_Date\n\nResidual Years = Residual Days/365"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "AUg6RAIThkZKGyDdC1HME",
+          "slug" : "Update_Column_Names"
+        } ],
+        "outputs" : [ {
+          "id" : "qw8ePJrtTIwvQs4H2DIiv",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "Process_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Process_Date"
+          },
+          "description" : "",
+          "_row_id" : "1874477197"
+        }, {
+          "target" : "From_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "From_Date"
+          },
+          "description" : "",
+          "_row_id" : "10767000"
+        }, {
+          "target" : "To_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "To_Date"
+          },
+          "description" : "",
+          "_row_id" : "1936539125"
+        }, {
+          "target" : "Account_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Account_Id"
+          },
+          "description" : "",
+          "_row_id" : "210105008"
+        }, {
+          "target" : "Product_system",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Product_system"
+          },
+          "description" : "",
+          "_row_id" : "102087440"
+        }, {
+          "target" : "Product_Code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Product_Code"
+          },
+          "description" : "",
+          "_row_id" : "763072556"
+        }, {
+          "target" : "Gl_Account_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Gl_Account_Id"
+          },
+          "description" : "",
+          "_row_id" : "744962296"
+        }, {
+          "target" : "Legal_Entity_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Legal_Entity_Id"
+          },
+          "description" : "",
+          "_row_id" : "1063576494"
+        }, {
+          "target" : "Current_Balance",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Current_Balance"
+          },
+          "description" : "",
+          "_row_id" : "1194250161"
+        }, {
+          "target" : "Maturity_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Maturity_Date"
+          },
+          "description" : "",
+          "_row_id" : "2082564422"
+        }, {
+          "target" : "Opened_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Opened_Date"
+          },
+          "description" : "",
+          "_row_id" : "279786689"
+        }, {
+          "target" : "Currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Currency"
+          },
+          "description" : "",
+          "_row_id" : "1023749051"
+        }, {
+          "target" : "Origination_system",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Origination_system"
+          },
+          "description" : "",
+          "_row_id" : "2065185374"
+        }, {
+          "target" : "Prim_Purps_Type_Lbl",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Prim_Purps_Type_Lbl"
+          },
+          "description" : "",
+          "_row_id" : "184351824"
+        }, {
+          "target" : "Secnd_Purps_Type_Lbl",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Secnd_Purps_Type_Lbl"
+          },
+          "description" : "",
+          "_row_id" : "1501118781"
+        }, {
+          "target" : "Apprv_Lmt_Amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Apprv_Lmt_Amt"
+          },
+          "description" : "",
+          "_row_id" : "2040796787"
+        }, {
+          "target" : "Predominant_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Predominant_Purpose"
+          },
+          "description" : "",
+          "_row_id" : "1932450945"
+        }, {
+          "target" : "EFS_Housing_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "EFS_Housing_Purpose"
+          },
+          "description" : "",
+          "_row_id" : "227016949"
+        }, {
+          "target" : "Sub_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Sub_Purpose"
+          },
+          "description" : "",
+          "_row_id" : "1661158446"
+        }, {
+          "target" : "EFS_Housing_purpose_Rule_ID",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "EFS_Housing_purpose_Rule_ID"
+          },
+          "description" : "",
+          "_row_id" : "2003717115"
+        }, {
+          "target" : "Residual_days",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "datediff(Maturity_Date, Process_Date)"
+          },
+          "description" : "",
+          "_row_id" : "622788814"
+        }, {
+          "target" : "Residual_years",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "(datediff(Maturity_Date, Process_Date) / 365.0D)"
+          },
+          "description" : "",
+          "_row_id" : "1028857467"
+        }, {
+          "target" : "Housing_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Housing_Purpose"
+          },
+          "description" : "",
+          "_row_id" : "1438808722"
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Product_system", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##EFS_Housing_purpose_Rule_ID", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Opened_Date", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Gl_Account_Id", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Secnd_Purps_Type_Lbl", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Currency", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Prim_Purps_Type_Lbl", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Predominant_Purpose", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Process_Date", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##To_Date", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Apprv_Lmt_Amt", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##EFS_Housing_Purpose", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##From_Date", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Product_Code", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Sub_Purpose", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Origination_system", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Current_Balance", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Maturity_Date", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Account_Id", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Legal_Entity_Id", "AUg6RAIThkZKGyDdC1HME$$WYJKb95y0H4bLLg12tfJM$$gSxXzOdPrb9uydw7Ui4dO$$EdGg7mH486vc3Po9_uJlz$$h3XVIW3xrD75svVWfwMx4$$ElFryk8AE0wROV2w-eXMe$$-rshmDDkVoQDyhlPS9ZGJ$$gC2aMpZ6eapgUQoZcmIlP$$nAdVTD14ezXWJZxTFmZn8$$ZHYLjEySu7YWwK6JgGs0N##Housing_Purpose" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/Reformat",
+        "projectId" : "224",
+        "projectName" : "ProphecySparkBasicsPython",
+        "version" : "0.2.17.dev"
+      }
+    },
+    "Dv3o9LxTW8d38GanfbPMh" : {
+      "id" : "Dv3o9LxTW8d38GanfbPMh",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Add_EFSResidualTerm",
+        "slug" : "Add_EFSResidualTerm",
+        "x" : 440,
+        "y" : -240,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Calculate EFS Residual Term\n\nIF Residual_years > 0 and < 1, THEN \"Short Term\"\nELSEIF Residual_years > 1 THEN \"Long Term\"\nELSEIF Residual_years is blank THEN \"Long Term\""
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "nCuDHRlCxXuQpaE7tP0u5",
+          "slug" : "reformat_update_column_names"
+        } ],
+        "outputs" : [ {
+          "id" : "JX1MRtjZoy2QPPGh3ziHH",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "Process_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Process_Date"
+          },
+          "description" : "",
+          "_row_id" : "636499726"
+        }, {
+          "target" : "From_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "From_Date"
+          },
+          "description" : "",
+          "_row_id" : "38731267"
+        }, {
+          "target" : "To_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "To_Date"
+          },
+          "description" : "",
+          "_row_id" : "1121387929"
+        }, {
+          "target" : "Account_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Account_Id"
+          },
+          "description" : "",
+          "_row_id" : "754981818"
+        }, {
+          "target" : "Product_system",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Product_system"
+          },
+          "description" : "",
+          "_row_id" : "696628000"
+        }, {
+          "target" : "Product_Code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Product_Code"
+          },
+          "description" : "",
+          "_row_id" : "94901350"
+        }, {
+          "target" : "Gl_Account_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Gl_Account_Id"
+          },
+          "description" : "",
+          "_row_id" : "700953961"
+        }, {
+          "target" : "Legal_Entity_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Legal_Entity_Id"
+          },
+          "description" : "",
+          "_row_id" : "1905195257"
+        }, {
+          "target" : "Current_Balance",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Current_Balance"
+          },
+          "description" : "",
+          "_row_id" : "2736191"
+        }, {
+          "target" : "Maturity_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Maturity_Date"
+          },
+          "description" : "",
+          "_row_id" : "785682165"
+        }, {
+          "target" : "Opened_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Opened_Date"
+          },
+          "description" : "",
+          "_row_id" : "406326960"
+        }, {
+          "target" : "Currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Currency"
+          },
+          "description" : "",
+          "_row_id" : "1999869152"
+        }, {
+          "target" : "Origination_system",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Origination_system"
+          },
+          "description" : "",
+          "_row_id" : "185606218"
+        }, {
+          "target" : "Prim_Purps_Type_Lbl",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Prim_Purps_Type_Lbl"
+          },
+          "description" : "",
+          "_row_id" : "1677263646"
+        }, {
+          "target" : "Secnd_Purps_Type_Lbl",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Secnd_Purps_Type_Lbl"
+          },
+          "description" : "",
+          "_row_id" : "1660942071"
+        }, {
+          "target" : "Apprv_Lmt_Amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Apprv_Lmt_Amt"
+          },
+          "description" : "",
+          "_row_id" : "5901512"
+        }, {
+          "target" : "Predominant_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Predominant_Purpose"
+          },
+          "description" : "",
+          "_row_id" : "608622894"
+        }, {
+          "target" : "EFS_Housing_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "EFS_Housing_Purpose"
+          },
+          "description" : "",
+          "_row_id" : "1870271470"
+        }, {
+          "target" : "Sub_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Sub_Purpose"
+          },
+          "description" : "",
+          "_row_id" : "1819899733"
+        }, {
+          "target" : "EFS_Housing_purpose_Rule_ID",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "EFS_Housing_purpose_Rule_ID"
+          },
+          "description" : "",
+          "_row_id" : "1621462251"
+        }, {
+          "target" : "Residual_days",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Residual_days"
+          },
+          "description" : "",
+          "_row_id" : "1881629908"
+        }, {
+          "target" : "Residual_years",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Residual_years"
+          },
+          "description" : "",
+          "_row_id" : "1334445195"
+        }, {
+          "target" : "EFS_Residual_Term",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "case\nwhen Residual_years >0 and Residual_years <1 then \"Short Term\"\nwhen Residual_years >1 then \"Long Term\"\nelse \"Long Term\"\nend"
+          },
+          "description" : "",
+          "_row_id" : "2060324348"
+        }, {
+          "target" : "Housing_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Housing_Purpose"
+          },
+          "description" : "",
+          "_row_id" : "190270114"
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##From_Date", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Opened_Date", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Secnd_Purps_Type_Lbl", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Predominant_Purpose", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Product_system", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Maturity_Date", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Current_Balance", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##EFS_Housing_purpose_Rule_ID", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Sub_Purpose", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##EFS_Housing_Purpose", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Product_Code", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Apprv_Lmt_Amt", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Process_Date", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Legal_Entity_Id", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Residual_years", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##To_Date", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Residual_days", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Currency", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Housing_Purpose", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Gl_Account_Id", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Origination_system", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Account_Id", "nCuDHRlCxXuQpaE7tP0u5$$TXYX0wQBmb6Bl6R76lp75$$sYnt_aNwnVyKw9gpSEDA0$$Sxvqkr1FR1QwudKflGORd$$VZBLds4lNlHgXCHEvDwjy$$PQcJVWkwSEh9ZWAfiIcSx$$fxlCGQsMqzzRPMlIJ-ZTb$$RNHL2Gse4qpVSKWRNEtHE$$F9nLQ9yyfHAzz1UPd5nVn$$BXSgCBBtXMHwh4111pUom##Prim_Purps_Type_Lbl" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/Reformat",
+        "projectId" : "224",
+        "projectName" : "ProphecySparkBasicsPython",
+        "version" : "0.2.17.dev"
+      }
+    }
+  }
+}

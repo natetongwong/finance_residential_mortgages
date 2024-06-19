@@ -42,11 +42,8 @@ pipelines:
     datasets:
       inputs:
       - datasets/L0_raw_loan_purpose
-      - datasets/L0_raw_product_system
       - datasets/L0_raw_rule_ID_mapping
-      - datasets/L1_raw_origination_system
-      outputs:
-      - datasets/L1_bronze_finance_residential_mortgages
+      outputs: []
     subgraphs: []
     dependencies: {}
 datasets:
@@ -168,24 +165,16 @@ functions:
   udafs: {}
   expressions: {}
   airflowFunctions: {}
-  businessRules:
-    businessRules/Override_Housing_Purpose:
-      name: Override_Housing_Purpose
-      description: Rule to override housing purposes
-      tags: []
-      inputs: []
-      outputs: []
-      author: nathan@prophecy.io
-      createdAt: '2022-12-15 18:04:50'
-    businessRules/Override_EFS_Residual_Term_Rule_ID:
-      name: Override_EFS_Residual_Term_Rule_ID
-      description: ''
-      tags: []
-      inputs: []
-      outputs: []
-      author: nathan@prophecy.io
-      createdAt: '2022-12-15 18:04:50'
-subgraphs: {}
+  businessRules: {}
+subgraphs:
+  subgraphs/Ruleset1:
+    name: Enrichments
+    description: 'Reusable component for enriching data. '
+    author: nathan@prophecy.io
+    language: python
+    artefactID: ''
+    mode: batch
+    createdAt: '2024-05-23 03:23:09'
 sqlModels: {}
 sqlSnapshots: {}
 sqlTests: {}
@@ -196,17 +185,17 @@ sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
 - type: plibMaven
-  modifiedAt: '2024-05-14T23:51:21.701584Z'
+  modifiedAt: '2024-05-23T01:36:28.008742Z'
   name: plibMaven
-  version: 7.1.95
-  id: '1699264932'
-  createdAt: '2024-05-14T23:51:21.701457Z'
+  version: 7.1.100
+  id: '301823199'
+  createdAt: '2024-05-23T01:36:28.008712Z'
 - type: plibPypi
-  modifiedAt: '2024-05-14T23:51:21.701691Z'
+  modifiedAt: '2024-05-23T01:36:28.008787Z'
   name: plibPypi
-  version: 1.8.15
-  id: '372628141'
-  createdAt: '2024-05-14T23:51:21.701652Z'
+  version: 1.8.23
+  id: '1839287552'
+  createdAt: '2024-05-23T01:36:28.008777Z'
 projectDependencies:
   '224':
     projectUID: 224
