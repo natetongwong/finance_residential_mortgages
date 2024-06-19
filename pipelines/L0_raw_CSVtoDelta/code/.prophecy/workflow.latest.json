@@ -12,8 +12,8 @@
     "codeGenConfiguration" : {
       "editableConfig" : true,
       "plibVersion" : {
-        "mavenVersion" : "7.1.100",
-        "pyPiVersion" : "1.8.23"
+        "mavenVersion" : "8.0.11",
+        "pyPiVersion" : "1.9.5"
       }
     },
     "id" : "1",
@@ -23,7 +23,7 @@
       "hasApplication" : true
     },
     "language" : "python",
-    "fabricId" : "108",
+    "fabricId" : "117",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -120,7 +120,7 @@
       "metadata" : {
         "label" : "L0_raw_rule_ID_mapping",
         "slug" : "L0_raw_rule_ID_mapping",
-        "x" : -560,
+        "x" : -500,
         "y" : 340,
         "phase" : 0,
         "cache" : false,
@@ -388,7 +388,7 @@
         "columnsSelector" : [ "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Opened_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Src_Sys_Code", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##To_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Currency", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##From_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Legal_Entity_Id", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Maturity_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Account_Id", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Current_Balance", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Gl_Account_Id", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Product_Code" ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=224&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -706,7 +706,7 @@
         "columnsSelector" : [ "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##Apprv_Lmt_Amt", "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##AppIn_Id", "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##Crncy_Code", "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##Secnd_Purps_Type_Lbl", "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##Account_Id", "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##To_Date", "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##Prim_Purps_Type_Lbl", "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##From_Date", "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##Src_Sys_Code" ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.17.dev&projectSubscriptionProjectId=224&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=224&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },

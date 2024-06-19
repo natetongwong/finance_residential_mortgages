@@ -185,34 +185,34 @@ sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
 - type: plibMaven
-  modifiedAt: '2024-05-23T01:36:28.008742Z'
+  modifiedAt: '2024-06-19T08:40:02.184499Z'
   name: plibMaven
-  version: 7.1.100
-  id: '301823199'
-  createdAt: '2024-05-23T01:36:28.008712Z'
+  version: 8.0.11
+  id: '837185331'
+  createdAt: '2024-06-19T08:40:02.184459Z'
 - type: plibPypi
-  modifiedAt: '2024-05-23T01:36:28.008787Z'
+  modifiedAt: '2024-06-19T08:40:02.18454Z'
   name: plibPypi
-  version: 1.8.23
-  id: '1839287552'
-  createdAt: '2024-05-23T01:36:28.008777Z'
+  version: 1.9.5
+  id: '2024894383'
+  createdAt: '2024-06-19T08:40:02.184528Z'
 projectDependencies:
   '224':
     projectUID: 224
     projectName: ProphecySparkBasicsPython
     repositoryPath: gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=
-    version: 0.2.17.dev
+    version: 0.2.25
     isDefault: true
     author: null
-    createdAt: '2024-05-18 21:11:29'
+    createdAt: '2024-06-19 08:40:30'
   '225':
     projectUID: 225
     projectName: ProphecyWarehousePython
     repositoryPath: gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_225.git&subPath=
-    version: 0.0.6.dev
+    version: 0.0.8
     isDefault: true
     author: null
-    createdAt: '2024-05-18 21:11:35'
+    createdAt: '2024-06-19 18:25:48'
 flags:
   shouldAddDefaultDependenciesIfAbsent: true
 pipelineConfigurations: {}
