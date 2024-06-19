@@ -7,11 +7,8 @@ from prophecy.utils import *
 from l1_bronze_exactandinitialenrichments.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    df_raw_loan_purpose = raw_loan_purpose(spark)
-    df_reformatted_data = reformatted_data(spark, df_raw_loan_purpose)
-    loan_purpose_lookup(spark, df_reformatted_data)
-    df_read_raw_rule_id_mapping = read_raw_rule_id_mapping(spark)
-    rule_check_lookup(spark, df_read_raw_rule_id_mapping)
+    loan_purpose_lookup(spark)
+    rule_check_lookup(spark)
 
 def main():
     spark = SparkSession.builder\
