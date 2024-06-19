@@ -30,7 +30,7 @@
       "language" : "python",
       "udfs" : [ ],
       "functionPackageName" : "pocwestpac.financeresidentialmortgages.functions",
-      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions", "westpacbusiness.ruleset10overridehousingpurpose.functions" ]
     },
     "udafs" : {
       "language" : "python",
@@ -64,6 +64,24 @@
       "projectUID" : "225",
       "projectName" : "ProphecyWarehousePython",
       "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "262",
+      "projectName" : "Ruleset_Finance_Residential_Mortgages",
+      "externalDependencies" : [ {
+        "type" : "plibMaven",
+        "modifiedAt" : "2024-05-23T21:10:57.805406Z",
+        "name" : "plibMaven",
+        "version" : "7.1.100",
+        "id" : "757731159",
+        "createdAt" : "2024-05-23T21:10:57.805375Z"
+      }, {
+        "type" : "plibPypi",
+        "modifiedAt" : "2024-05-23T21:10:57.805442Z",
+        "name" : "plibPypi",
+        "version" : "1.8.23",
+        "id" : "1307381560",
+        "createdAt" : "2024-05-23T21:10:57.805433Z"
+      } ]
     } ],
     "isImported" : false,
     "interimMode" : "Full",

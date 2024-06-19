@@ -42,8 +42,11 @@ pipelines:
     datasets:
       inputs:
       - datasets/L0_raw_loan_purpose
+      - datasets/L0_raw_product_system
       - datasets/L0_raw_rule_ID_mapping
-      outputs: []
+      - datasets/L1_raw_origination_system
+      outputs:
+      - datasets/L1_bronze_finance_residential_mortgages
     subgraphs: []
     dependencies: {}
 datasets:
@@ -166,15 +169,7 @@ functions:
   expressions: {}
   airflowFunctions: {}
   businessRules: {}
-subgraphs:
-  subgraphs/Ruleset1:
-    name: Enrichments
-    description: 'Reusable component for enriching data. '
-    author: nathan@prophecy.io
-    language: python
-    artefactID: ''
-    mode: batch
-    createdAt: '2024-05-23 03:23:09'
+subgraphs: {}
 sqlModels: {}
 sqlSnapshots: {}
 sqlTests: {}
@@ -213,6 +208,14 @@ projectDependencies:
     isDefault: true
     author: null
     createdAt: '2024-06-19 18:25:48'
+  '262':
+    projectUID: 262
+    projectName: Ruleset_Finance_Residential_Mortgages
+    repositoryPath: gitUri=https://github.com/natetongwong/ruleset10_OverrideHousingPurpose&subPath=/
+    version: Ruleset_Finance_Residential_Mortgages/2.1
+    isDefault: false
+    author: null
+    createdAt: '2024-06-19 18:28:49'
 flags:
   shouldAddDefaultDependenciesIfAbsent: true
 pipelineConfigurations: {}

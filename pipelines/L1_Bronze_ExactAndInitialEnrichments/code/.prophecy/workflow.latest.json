@@ -30,7 +30,7 @@
       "language" : "python",
       "udfs" : [ ],
       "functionPackageName" : "pocwestpac.financeresidentialmortgages.functions",
-      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions", "westpacbusiness.ruleset10overridehousingpurpose.functions" ]
     },
     "udafs" : {
       "language" : "python",
@@ -39,7 +39,16 @@
     "configuration" : {
       "common" : {
         "type" : "record",
-        "fields" : [ ]
+        "fields" : [ {
+          "name" : "Enrichments",
+          "kind" : {
+            "type" : "record",
+            "fields" : [ ]
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : true,
+          "isReferenced" : false
+        } ]
       },
       "oldCommon" : {
         "type" : "record",
@@ -64,6 +73,24 @@
       "projectUID" : "225",
       "projectName" : "ProphecyWarehousePython",
       "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "262",
+      "projectName" : "Ruleset_Finance_Residential_Mortgages",
+      "externalDependencies" : [ {
+        "type" : "plibMaven",
+        "modifiedAt" : "2024-05-23T21:10:57.805406Z",
+        "name" : "plibMaven",
+        "version" : "7.1.100",
+        "id" : "757731159",
+        "createdAt" : "2024-05-23T21:10:57.805375Z"
+      }, {
+        "type" : "plibPypi",
+        "modifiedAt" : "2024-05-23T21:10:57.805442Z",
+        "name" : "plibPypi",
+        "version" : "1.8.23",
+        "id" : "1307381560",
+        "createdAt" : "2024-05-23T21:10:57.805433Z"
+      } ]
     } ],
     "isImported" : false,
     "interimMode" : "Full",
@@ -94,6 +121,48 @@
     "sourcePort" : "Kf7YpvGy26BnrmhLKNXDM$$GdKeOHbEPHU4gTCN_zYrP",
     "target" : "DsrdhiOJD6BYbpY5tN8Yp$$YFNSQhX6ikr-YVS0yGc1Y",
     "targetPort" : "QXoVIHRHwnvIIZ9w1pevb$$-5LQMTMNVlMr2uLYcv1qh"
+  }, {
+    "id" : "Cz0vEywFVjB278qazfe6T",
+    "source" : "1E8ixj1LphkeCiEXp59UI$$2fxjFXDqnVjZuBxvVnJIq",
+    "sourcePort" : "-3S1Px0mQ3vHUFoQWdrlk$$EdcIIxDH4f1SvRrTU5Cl3",
+    "target" : "rOh0UaVAcsNM4zzmmUSwI$$qnZgWwcHp9IOazDMXGfjt",
+    "targetPort" : "3zoYgm8quv-4w23Z_bwMC$$xmCk__5gBKa-6Y5tmW3o0"
+  }, {
+    "id" : "cV8RxVHSencF9rGfWia_1",
+    "source" : "o4na6E8dp8sZeGDU_Hg7T$$MT8ZYkBj3xWKHNugO8F8g",
+    "sourcePort" : "RPSRcReWLHXo4nnAs5PrE$$-0QQaLH5YyPOssgcbyURQ",
+    "target" : "1E8ixj1LphkeCiEXp59UI$$2fxjFXDqnVjZuBxvVnJIq",
+    "targetPort" : "e5qz9JG7OKtTrs9RUaqZA$$RSfduQ0xdaeakzjbT1G0A"
+  }, {
+    "id" : "t1iMjvMdSQMnWUTJC03lz",
+    "source" : "Ov6Ly5RVQK9UGQJ8bl6Sv$$dhXSY92QfKARxw6UHAonD",
+    "sourcePort" : "2jX3oZ37eByWsg3rfn2Xr$$Z99SzEenAVZNSFTgtBiK8",
+    "target" : "rOh0UaVAcsNM4zzmmUSwI$$qnZgWwcHp9IOazDMXGfjt",
+    "targetPort" : "A7nMovVKWOPOLIfgzWU8C$$rCrRUTIrWt2FlAwadQMs3"
+  }, {
+    "id" : "tTQPckfzLfn2T4XD7lgzw$$hR_bQcLrECK5pNK6Zycxj",
+    "source" : "rOh0UaVAcsNM4zzmmUSwI$$qnZgWwcHp9IOazDMXGfjt",
+    "sourcePort" : "HrrW71CjSmep7tXOLZfMo$$BJBPv8N3aWNsN_V_qiudw",
+    "target" : "47SvBcMG8-iuG8VZwImmW$$-_T0ctfpzvDfRDl8yE1Iu",
+    "targetPort" : "JxhMT9y0Rgp5B3f8uNEuK$$u8Te93bxfGOWa5nKByAt1"
+  }, {
+    "id" : "C8IXGTp41bOBUr3vpAXfG$$7S5ukDmBm4ji1Y9ZuUZ0M",
+    "source" : "B8bkRZsOlCqy1hZg0j634$$5-_uTurzUjCgO1s_CP-ZU",
+    "sourcePort" : "yA2e2eR6CSFQx_bQyslsw$$QhDEpeSM0m7JUFTI0-xGI",
+    "target" : "RGU0ei6OxrZy1UeIo1Di4$$UICu9H_qlPK6d2NgfVvfW",
+    "targetPort" : "MiVQuEppkH882FEiFfbbJ$$IOEzy5-bLc6nQgdDHMdcl"
+  }, {
+    "id" : "NkfTytqI-LN-HdmpfZZh9",
+    "source" : "47SvBcMG8-iuG8VZwImmW$$-_T0ctfpzvDfRDl8yE1Iu",
+    "sourcePort" : "mKVr1ncjTK8TsX6AtN3VI$$9IOU96vSbLiLnpCzNxJG3",
+    "target" : "zDSjXi_TX_yDS0mkCwz0u$$HXXeW_CPEZGrz8C5dvQgH",
+    "targetPort" : "aQfeo-0pBX6ERXwcbMEn3$$o-4ZYMFfpbEVZE-vxz37M"
+  }, {
+    "id" : "gDO5a312EYGwCcp9xuDAd",
+    "source" : "zDSjXi_TX_yDS0mkCwz0u$$HXXeW_CPEZGrz8C5dvQgH",
+    "sourcePort" : "5klDlFTHKPSiwtIfVniwz$$hauNYEiN7AWvq31NL7kU1",
+    "target" : "B8bkRZsOlCqy1hZg0j634$$5-_uTurzUjCgO1s_CP-ZU",
+    "targetPort" : "68ppQ03S9nZUCST7zrNYC$$3D72P9kB6i8Jl2MaLMtMm"
   } ],
   "processes" : {
     "skMzrlHDDRn05HRUEwrTt$$HZUdjNCdosWvcDwtfbgqm" : {
@@ -121,6 +190,306 @@
       },
       "properties" : {
         "datasetId" : "datasets/L0_raw_loan_purpose"
+      }
+    },
+    "B8bkRZsOlCqy1hZg0j634$$5-_uTurzUjCgO1s_CP-ZU" : {
+      "id" : "B8bkRZsOlCqy1hZg0j634$$5-_uTurzUjCgO1s_CP-ZU",
+      "component" : "AddRule",
+      "metadata" : {
+        "label" : "add_override_housing_purpose",
+        "slug" : "add_override_housing_purpose",
+        "x" : 280,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Adds an override housing purpose column to the dataset.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "68ppQ03S9nZUCST7zrNYC$$3D72P9kB6i8Jl2MaLMtMm",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Process_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "From_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_Code",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gl_Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Legal_Entity_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Current_Balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Maturity_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Opened_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Currency",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Origination_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Prim_Purps_Type_Lbl",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Secnd_Purps_Type_Lbl",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Apprv_Lmt_Amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Predominant_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_purpose_Rule_ID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Residual_days",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Residual_years",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Residual_Term",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "yA2e2eR6CSFQx_bQyslsw$$QhDEpeSM0m7JUFTI0-xGI",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "sql",
+        "importString" : "",
+        "transformations" : [ {
+          "AddRule" : {
+            "expression" : {
+              "format" : "sql",
+              "expression" : "Override_Housing_Purpose()"
+            },
+            "param_errors" : [ {
+              "paramName" : "Secnd_Purps_Type_Lbl",
+              "hasError" : false
+            }, {
+              "paramName" : "Origination_system",
+              "hasError" : false
+            }, {
+              "paramName" : "Housing_Purpose",
+              "hasError" : false
+            } ]
+          },
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "kind" : "AddRule",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "",
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          }
+        } ],
+        "activeTab" : "transformations",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=https://github.com/natetongwong/ruleset10_OverrideHousingPurpose&subPath=/&tag=Ruleset_Finance_Residential_Mortgages/2.1&projectSubscriptionProjectId=262&path=gems/AddRule",
+        "projectName" : "Ruleset_Finance_Residential_Mortgages"
       }
     },
     "KpldcYto1a5eQMnCOT69S$$zW217GlgjUcmcAJB5_LXG" : {
@@ -239,6 +608,33 @@
         "valueColumns" : [ "Predominant_Purpose", "Housing_Purpose", "Sub_Purpose_Housing", "Sub_Purpose_Personal" ]
       }
     },
+    "o4na6E8dp8sZeGDU_Hg7T$$MT8ZYkBj3xWKHNugO8F8g" : {
+      "id" : "o4na6E8dp8sZeGDU_Hg7T$$MT8ZYkBj3xWKHNugO8F8g",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "L0_raw_origination_system",
+        "slug" : "L0_raw_origination_system",
+        "x" : -560,
+        "y" : -160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "RPSRcReWLHXo4nnAs5PrE$$-0QQaLH5YyPOssgcbyURQ",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/L1_raw_origination_system"
+      }
+    },
     "ksn0cQRRJGH2FWfx2OrIj$$rS8eqKTuQw0NLSAo5S-Bo" : {
       "id" : "ksn0cQRRJGH2FWfx2OrIj$$rS8eqKTuQw0NLSAo5S-Bo",
       "component" : "Source",
@@ -264,6 +660,1747 @@
       },
       "properties" : {
         "datasetId" : "datasets/L0_raw_rule_ID_mapping"
+      }
+    },
+    "zDSjXi_TX_yDS0mkCwz0u$$HXXeW_CPEZGrz8C5dvQgH" : {
+      "id" : "zDSjXi_TX_yDS0mkCwz0u$$HXXeW_CPEZGrz8C5dvQgH",
+      "component" : "Subgraph",
+      "metadata" : {
+        "label" : "Enrichments",
+        "slug" : "Enrichments",
+        "x" : 120,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "aQfeo-0pBX6ERXwcbMEn3$$o-4ZYMFfpbEVZE-vxz37M",
+          "slug" : "by_account_id",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "From_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Src_Sys_Code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_Code",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gl_Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Legal_Entity_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Current_Balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Maturity_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Opened_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Currency",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "From_Date2",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date2",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AppIn_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Origination_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Prim_Purps_Type_Lbl",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Secnd_Purps_Type_Lbl",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Crncy_Code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Apprv_Lmt_Amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Predominant_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_purpose_Rule_ID",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "5klDlFTHKPSiwtIfVniwz$$hauNYEiN7AWvq31NL7kU1",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { },
+      "connections" : [ {
+        "id" : "M1paSvVedvGgSAoMphn7w",
+        "source" : "SdofwH5xz3d3NUdJwTJR6$$hJarCfs3VQ7eg9pHFTgSG",
+        "sourcePort" : "XFcsO0xoxPWzzbn-rSId7$$ks5LkF3sEo7hV0jRdausJ",
+        "target" : "WppftYAddOgszzgpboZqS$$V0a6aju_JpL-RXZr2GTh4",
+        "targetPort" : "MHnUo81ayVEu74SZMEPrB$$wUmYcaYhlxXN4EwVsueSQ"
+      }, {
+        "id" : "Zcjh8B2BBF4rDSUgdIKYb",
+        "source" : "WppftYAddOgszzgpboZqS$$V0a6aju_JpL-RXZr2GTh4",
+        "sourcePort" : "3ytOJV78Co63WSXFOD77q$$pmWSVlqHKpwE5J3aYqr6h",
+        "target" : "5JTanoQ1-wdSfsgCUJlsZ$$l1zf729tRjCJUmoYIJ2k7",
+        "targetPort" : "ui1kBJb24YM6g-KN2QZct$$opp9Do0wDMOxki1a5CZb7"
+      }, {
+        "id" : "yZfU8BjfRJ7M6Ebx93Ewm",
+        "source" : "zDSjXi_TX_yDS0mkCwz0u$$HXXeW_CPEZGrz8C5dvQgH",
+        "sourcePort" : "aQfeo-0pBX6ERXwcbMEn3$$o-4ZYMFfpbEVZE-vxz37M",
+        "target" : "SdofwH5xz3d3NUdJwTJR6$$hJarCfs3VQ7eg9pHFTgSG",
+        "targetPort" : "dypg6K4rTCvNr239qkuB7$$ITpl3GP9udTPzEDTorIOi"
+      }, {
+        "id" : "4Qdpkoc20Nr0p8vxjDtYq$$LJ68luBYLzYdyYpmjZOYp",
+        "source" : "5JTanoQ1-wdSfsgCUJlsZ$$l1zf729tRjCJUmoYIJ2k7",
+        "sourcePort" : "30GYNUmPJoFGvCV53MqYT$$3nqkxXINdaYpif4QD9zPW",
+        "target" : "zDSjXi_TX_yDS0mkCwz0u$$HXXeW_CPEZGrz8C5dvQgH",
+        "targetPort" : "5klDlFTHKPSiwtIfVniwz$$hauNYEiN7AWvq31NL7kU1"
+      } ],
+      "processes" : {
+        "SdofwH5xz3d3NUdJwTJR6$$hJarCfs3VQ7eg9pHFTgSG" : {
+          "id" : "SdofwH5xz3d3NUdJwTJR6$$hJarCfs3VQ7eg9pHFTgSG",
+          "component" : "Reformat",
+          "metadata" : {
+            "label" : "Update_Column_Names",
+            "slug" : "Update_Column_Names",
+            "x" : 100,
+            "y" : -280,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "dypg6K4rTCvNr239qkuB7$$ITpl3GP9udTPzEDTorIOi",
+              "slug" : "by_account_id",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "From_Date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "To_Date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Account_Id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Src_Sys_Code",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Product_Code",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Gl_Account_Id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Legal_Entity_Id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Current_Balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Maturity_Date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Opened_Date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Currency",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "From_Date2",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "To_Date2",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "AppIn_Id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Origination_system",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Prim_Purps_Type_Lbl",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Secnd_Purps_Type_Lbl",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Crncy_Code",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Apprv_Lmt_Amt",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Predominant_Purpose",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Housing_Purpose",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Sub_Purpose",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "EFS_Housing_purpose_Rule_ID",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "EFS_Housing_Purpose",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "isStreaming" : false
+            } ],
+            "outputs" : [ {
+              "id" : "XFcsO0xoxPWzzbn-rSId7$$ks5LkF3sEo7hV0jRdausJ",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
+          },
+          "properties" : {
+            "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+            "expressions" : [ {
+              "target" : "Process_Date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "CASE\nWHEN From_Date = last_day(From_Date) THEN From_Date\nELSE last_day(date_sub(From_Date, 30))\nEND"
+              },
+              "description" : ""
+            }, {
+              "target" : "From_Date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "From_Date"
+              },
+              "description" : ""
+            }, {
+              "target" : "To_Date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "To_Date"
+              },
+              "description" : ""
+            }, {
+              "target" : "Account_Id",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Account_Id"
+              },
+              "description" : ""
+            }, {
+              "target" : "Product_system",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Src_Sys_Code"
+              },
+              "description" : ""
+            }, {
+              "target" : "Product_Code",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Product_Code"
+              },
+              "description" : ""
+            }, {
+              "target" : "Gl_Account_Id",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Gl_Account_Id"
+              },
+              "description" : ""
+            }, {
+              "target" : "Legal_Entity_Id",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Legal_Entity_Id"
+              },
+              "description" : ""
+            }, {
+              "target" : "Current_Balance",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Current_Balance"
+              },
+              "description" : ""
+            }, {
+              "target" : "Maturity_Date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Maturity_Date"
+              },
+              "description" : ""
+            }, {
+              "target" : "Opened_Date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Opened_Date"
+              },
+              "description" : ""
+            }, {
+              "target" : "Currency",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Currency"
+              },
+              "description" : ""
+            }, {
+              "target" : "Origination_system",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Origination_system"
+              },
+              "description" : ""
+            }, {
+              "target" : "Prim_Purps_Type_Lbl",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Prim_Purps_Type_Lbl"
+              },
+              "description" : ""
+            }, {
+              "target" : "Secnd_Purps_Type_Lbl",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Secnd_Purps_Type_Lbl"
+              },
+              "description" : ""
+            }, {
+              "target" : "Apprv_Lmt_Amt",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Apprv_Lmt_Amt"
+              },
+              "description" : ""
+            }, {
+              "target" : "Predominant_Purpose",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Predominant_Purpose"
+              },
+              "description" : ""
+            }, {
+              "target" : "EFS_Housing_Purpose",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "EFS_Housing_Purpose"
+              },
+              "description" : ""
+            }, {
+              "target" : "Sub_Purpose",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Sub_Purpose"
+              },
+              "description" : ""
+            }, {
+              "target" : "EFS_Housing_purpose_Rule_ID",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "rulecheck(EFS_Housing_Purpose)['EFS_Housing_purpose_Rule_ID']"
+              },
+              "description" : ""
+            }, {
+              "target" : "Housing_Purpose",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Housing_Purpose"
+              },
+              "description" : ""
+            } ],
+            "importString" : "",
+            "activeTab" : "expressions",
+            "columnsSelector" : [ ]
+          },
+          "componentInfo" : {
+            "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=224&path=gems/Reformat",
+            "projectName" : "ProphecySparkBasicsPython"
+          }
+        },
+        "WppftYAddOgszzgpboZqS$$V0a6aju_JpL-RXZr2GTh4" : {
+          "id" : "WppftYAddOgszzgpboZqS$$V0a6aju_JpL-RXZr2GTh4",
+          "component" : "Reformat",
+          "metadata" : {
+            "label" : "reformat_update_column_names",
+            "slug" : "reformat_update_column_names",
+            "x" : 260,
+            "y" : -280,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "MHnUo81ayVEu74SZMEPrB$$wUmYcaYhlxXN4EwVsueSQ",
+              "slug" : "Update_Column_Names",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "Process_Date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "From_Date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "To_Date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Account_Id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Product_system",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Product_Code",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Gl_Account_Id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Legal_Entity_Id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Current_Balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Maturity_Date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Opened_Date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Currency",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Origination_system",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Prim_Purps_Type_Lbl",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Secnd_Purps_Type_Lbl",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Apprv_Lmt_Amt",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Predominant_Purpose",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "EFS_Housing_Purpose",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Sub_Purpose",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "EFS_Housing_purpose_Rule_ID",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Housing_Purpose",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "isStreaming" : false
+            } ],
+            "outputs" : [ {
+              "id" : "3ytOJV78Co63WSXFOD77q$$pmWSVlqHKpwE5J3aYqr6h",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
+          },
+          "properties" : {
+            "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+            "expressions" : [ {
+              "target" : "Process_Date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Process_Date"
+              },
+              "description" : ""
+            }, {
+              "target" : "From_Date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "From_Date"
+              },
+              "description" : ""
+            }, {
+              "target" : "To_Date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "To_Date"
+              },
+              "description" : ""
+            }, {
+              "target" : "Account_Id",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Account_Id"
+              },
+              "description" : ""
+            }, {
+              "target" : "Product_system",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Product_system"
+              },
+              "description" : ""
+            }, {
+              "target" : "Product_Code",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Product_Code"
+              },
+              "description" : ""
+            }, {
+              "target" : "Gl_Account_Id",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Gl_Account_Id"
+              },
+              "description" : ""
+            }, {
+              "target" : "Legal_Entity_Id",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Legal_Entity_Id"
+              },
+              "description" : ""
+            }, {
+              "target" : "Current_Balance",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Current_Balance"
+              },
+              "description" : ""
+            }, {
+              "target" : "Maturity_Date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Maturity_Date"
+              },
+              "description" : ""
+            }, {
+              "target" : "Opened_Date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Opened_Date"
+              },
+              "description" : ""
+            }, {
+              "target" : "Currency",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Currency"
+              },
+              "description" : ""
+            }, {
+              "target" : "Origination_system",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Origination_system"
+              },
+              "description" : ""
+            }, {
+              "target" : "Prim_Purps_Type_Lbl",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Prim_Purps_Type_Lbl"
+              },
+              "description" : ""
+            }, {
+              "target" : "Secnd_Purps_Type_Lbl",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Secnd_Purps_Type_Lbl"
+              },
+              "description" : ""
+            }, {
+              "target" : "Apprv_Lmt_Amt",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Apprv_Lmt_Amt"
+              },
+              "description" : ""
+            }, {
+              "target" : "Predominant_Purpose",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Predominant_Purpose"
+              },
+              "description" : ""
+            }, {
+              "target" : "EFS_Housing_Purpose",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "EFS_Housing_Purpose"
+              },
+              "description" : ""
+            }, {
+              "target" : "Sub_Purpose",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Sub_Purpose"
+              },
+              "description" : ""
+            }, {
+              "target" : "EFS_Housing_purpose_Rule_ID",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "EFS_Housing_purpose_Rule_ID"
+              },
+              "description" : ""
+            }, {
+              "target" : "Residual_days",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "datediff(Maturity_Date, Process_Date)"
+              },
+              "description" : ""
+            }, {
+              "target" : "Residual_years",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "(datediff(Maturity_Date, Process_Date) / 365.0D)"
+              },
+              "description" : ""
+            }, {
+              "target" : "Housing_Purpose",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Housing_Purpose"
+              },
+              "description" : ""
+            } ],
+            "importString" : "",
+            "activeTab" : "expressions",
+            "columnsSelector" : [ ]
+          },
+          "componentInfo" : {
+            "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=224&path=gems/Reformat",
+            "projectName" : "ProphecySparkBasicsPython"
+          }
+        },
+        "5JTanoQ1-wdSfsgCUJlsZ$$l1zf729tRjCJUmoYIJ2k7" : {
+          "id" : "5JTanoQ1-wdSfsgCUJlsZ$$l1zf729tRjCJUmoYIJ2k7",
+          "component" : "Reformat",
+          "metadata" : {
+            "label" : "reformatted_account_details",
+            "slug" : "reformatted_account_details",
+            "x" : 420,
+            "y" : -280,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "ui1kBJb24YM6g-KN2QZct$$opp9Do0wDMOxki1a5CZb7",
+              "slug" : "reformat_update_column_names",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "Process_Date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "From_Date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "To_Date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Account_Id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Product_system",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Product_Code",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Gl_Account_Id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Legal_Entity_Id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Current_Balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Maturity_Date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Opened_Date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Currency",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Origination_system",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Prim_Purps_Type_Lbl",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Secnd_Purps_Type_Lbl",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Apprv_Lmt_Amt",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Predominant_Purpose",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "EFS_Housing_Purpose",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Sub_Purpose",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "EFS_Housing_purpose_Rule_ID",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Residual_days",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Residual_years",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Housing_Purpose",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "isStreaming" : false
+            } ],
+            "outputs" : [ {
+              "id" : "30GYNUmPJoFGvCV53MqYT$$3nqkxXINdaYpif4QD9zPW",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
+          },
+          "properties" : {
+            "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+            "expressions" : [ {
+              "target" : "Process_Date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Process_Date"
+              },
+              "description" : ""
+            }, {
+              "target" : "From_Date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "From_Date"
+              },
+              "description" : ""
+            }, {
+              "target" : "To_Date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "To_Date"
+              },
+              "description" : ""
+            }, {
+              "target" : "Account_Id",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Account_Id"
+              },
+              "description" : ""
+            }, {
+              "target" : "Product_system",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Product_system"
+              },
+              "description" : ""
+            }, {
+              "target" : "Product_Code",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Product_Code"
+              },
+              "description" : ""
+            }, {
+              "target" : "Gl_Account_Id",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Gl_Account_Id"
+              },
+              "description" : ""
+            }, {
+              "target" : "Legal_Entity_Id",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Legal_Entity_Id"
+              },
+              "description" : ""
+            }, {
+              "target" : "Current_Balance",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Current_Balance"
+              },
+              "description" : ""
+            }, {
+              "target" : "Maturity_Date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Maturity_Date"
+              },
+              "description" : ""
+            }, {
+              "target" : "Opened_Date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Opened_Date"
+              },
+              "description" : ""
+            }, {
+              "target" : "Currency",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Currency"
+              },
+              "description" : ""
+            }, {
+              "target" : "Origination_system",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Origination_system"
+              },
+              "description" : ""
+            }, {
+              "target" : "Prim_Purps_Type_Lbl",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Prim_Purps_Type_Lbl"
+              },
+              "description" : ""
+            }, {
+              "target" : "Secnd_Purps_Type_Lbl",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Secnd_Purps_Type_Lbl"
+              },
+              "description" : ""
+            }, {
+              "target" : "Apprv_Lmt_Amt",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Apprv_Lmt_Amt"
+              },
+              "description" : ""
+            }, {
+              "target" : "Predominant_Purpose",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Predominant_Purpose"
+              },
+              "description" : ""
+            }, {
+              "target" : "EFS_Housing_Purpose",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "EFS_Housing_Purpose"
+              },
+              "description" : ""
+            }, {
+              "target" : "Sub_Purpose",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Sub_Purpose"
+              },
+              "description" : ""
+            }, {
+              "target" : "EFS_Housing_purpose_Rule_ID",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "EFS_Housing_purpose_Rule_ID"
+              },
+              "description" : ""
+            }, {
+              "target" : "Residual_days",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Residual_days"
+              },
+              "description" : ""
+            }, {
+              "target" : "Residual_years",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Residual_years"
+              },
+              "description" : ""
+            }, {
+              "target" : "EFS_Residual_Term",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "case\nwhen Residual_years >0 and Residual_years <1 then \"Short Term\"\nwhen Residual_years >1 then \"Long Term\"\nelse \"Long Term\"\nend"
+              },
+              "description" : ""
+            }, {
+              "target" : "Housing_Purpose",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "Housing_Purpose"
+              },
+              "description" : ""
+            } ],
+            "importString" : "",
+            "activeTab" : "expressions",
+            "columnsSelector" : [ ]
+          },
+          "componentInfo" : {
+            "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=224&path=gems/Reformat",
+            "projectName" : "ProphecySparkBasicsPython"
+          }
+        }
+      }
+    },
+    "RGU0ei6OxrZy1UeIo1Di4$$UICu9H_qlPK6d2NgfVvfW" : {
+      "id" : "RGU0ei6OxrZy1UeIo1Di4$$UICu9H_qlPK6d2NgfVvfW",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "L1_bronze_finance_residential_mortgages",
+        "slug" : "L1_bronze_finance_residential_mortgages",
+        "x" : 440,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "MiVQuEppkH882FEiFfbbJ$$IOEzy5-bLc6nQgdDHMdcl",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Process_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "From_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_Code",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gl_Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Legal_Entity_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Current_Balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Maturity_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Opened_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Currency",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Origination_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Prim_Purps_Type_Lbl",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Secnd_Purps_Type_Lbl",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Apprv_Lmt_Amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Predominant_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_purpose_Rule_ID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Residual_days",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Residual_years",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Residual_Term",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/L1_bronze_finance_residential_mortgages"
       }
     },
     "KlKQb8h52I8yjqvHuKiEE$$5PpK1gwxkhY1R5mlBNeqF" : {
@@ -453,6 +2590,297 @@
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
+    "47SvBcMG8-iuG8VZwImmW$$-_T0ctfpzvDfRDl8yE1Iu" : {
+      "id" : "47SvBcMG8-iuG8VZwImmW$$-_T0ctfpzvDfRDl8yE1Iu",
+      "component" : "AddRule",
+      "metadata" : {
+        "label" : "add_rule_override_housing_purpose",
+        "slug" : "add_rule_override_housing_purpose",
+        "x" : -60,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Adds a rule override for housing purpose to the input DataFrame.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "JxhMT9y0Rgp5B3f8uNEuK$$u8Te93bxfGOWa5nKByAt1",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "From_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Src_Sys_Code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_Code",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gl_Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Legal_Entity_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Current_Balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Maturity_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Opened_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Currency",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "From_Date2",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date2",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AppIn_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Origination_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Prim_Purps_Type_Lbl",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Secnd_Purps_Type_Lbl",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Crncy_Code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Apprv_Lmt_Amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Predominant_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_purpose_Rule_ID",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "mKVr1ncjTK8TsX6AtN3VI$$9IOU96vSbLiLnpCzNxJG3",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "sql",
+        "importString" : "",
+        "transformations" : [ {
+          "AddRule" : {
+            "expression" : {
+              "format" : "sql",
+              "expression" : "Override_Housing_Purpose()"
+            },
+            "param_errors" : [ {
+              "paramName" : "Secnd_Purps_Type_Lbl",
+              "hasError" : false
+            }, {
+              "paramName" : "Origination_system",
+              "hasError" : false
+            }, {
+              "paramName" : "Housing_Purpose",
+              "hasError" : false
+            } ]
+          },
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "kind" : "AddRule",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "",
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          }
+        } ],
+        "activeTab" : "transformations",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=https://github.com/natetongwong/ruleset10_OverrideHousingPurpose&subPath=/&tag=Ruleset_Finance_Residential_Mortgages/2.1&projectSubscriptionProjectId=262&path=gems/AddRule",
+        "projectName" : "Ruleset_Finance_Residential_Mortgages"
+      }
+    },
     "DsrdhiOJD6BYbpY5tN8Yp$$YFNSQhX6ikr-YVS0yGc1Y" : {
       "id" : "DsrdhiOJD6BYbpY5tN8Yp$$YFNSQhX6ikr-YVS0yGc1Y",
       "component" : "Lookup",
@@ -513,6 +2941,722 @@
         "processName" : "rulecheck",
         "keyColumns" : [ "EFS_Housing_Purpose" ],
         "valueColumns" : [ "EFS_Housing_purpose_Rule_ID", "Rule_Name" ]
+      }
+    },
+    "Ov6Ly5RVQK9UGQJ8bl6Sv$$dhXSY92QfKARxw6UHAonD" : {
+      "id" : "Ov6Ly5RVQK9UGQJ8bl6Sv$$dhXSY92QfKARxw6UHAonD",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "L0_raw_product_system",
+        "slug" : "L0_raw_product_system",
+        "x" : -560,
+        "y" : -320,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "2jX3oZ37eByWsg3rfn2Xr$$Z99SzEenAVZNSFTgtBiK8",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/L0_raw_product_system"
+      }
+    },
+    "rOh0UaVAcsNM4zzmmUSwI$$qnZgWwcHp9IOazDMXGfjt" : {
+      "id" : "rOh0UaVAcsNM4zzmmUSwI$$qnZgWwcHp9IOazDMXGfjt",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "by_account_id",
+        "slug" : "by_account_id",
+        "x" : -200,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "A7nMovVKWOPOLIfgzWU8C$$rCrRUTIrWt2FlAwadQMs3",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "From_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Src_Sys_Code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_Code",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gl_Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Legal_Entity_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Current_Balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Maturity_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Opened_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Currency",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        }, {
+          "id" : "3zoYgm8quv-4w23Z_bwMC$$xmCk__5gBKa-6Y5tmW3o0",
+          "slug" : "in1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "From_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AppIn_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Src_Sys_Code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Prim_Purps_Type_Lbl",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Secnd_Purps_Type_Lbl",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Crncy_Code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Apprv_Lmt_Amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Predominant_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_purpose_Rule_ID",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "HrrW71CjSmep7tXOLZfMo$$BJBPv8N3aWNsN_V_qiudw",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Account_Id = in1.Account_Id"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "target" : "From_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.From_Date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "To_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.To_Date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Account_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Account_Id"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Src_Sys_Code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Src_Sys_Code"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Product_Code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Product_Code"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Gl_Account_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Gl_Account_Id"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Legal_Entity_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Legal_Entity_Id"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Current_Balance",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Current_Balance"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Maturity_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Maturity_Date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Opened_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Opened_Date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Currency",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Currency"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "From_Date2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.From_Date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "To_Date2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.To_Date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "AppIn_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.AppIn_Id"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Origination_system",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.Src_Sys_Code"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Prim_Purps_Type_Lbl",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.Prim_Purps_Type_Lbl"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Secnd_Purps_Type_Lbl",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.Secnd_Purps_Type_Lbl"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Crncy_Code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.Crncy_Code"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Apprv_Lmt_Amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.Apprv_Lmt_Amt"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Predominant_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.Predominant_Purpose"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Housing_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.Housing_Purpose"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Sub_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.Sub_Purpose"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "EFS_Housing_purpose_Rule_ID",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.EFS_Housing_purpose_Rule_ID"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "hints" : [ {
+          "id" : "A7nMovVKWOPOLIfgzWU8C$$rCrRUTIrWt2FlAwadQMs3",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "3zoYgm8quv-4w23Z_bwMC$$xmCk__5gBKa-6Y5tmW3o0",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "in0"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=224&path=gems/Join",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "1E8ixj1LphkeCiEXp59UI$$2fxjFXDqnVjZuBxvVnJIq" : {
+      "id" : "1E8ixj1LphkeCiEXp59UI$$2fxjFXDqnVjZuBxvVnJIq",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "lookup_loan_purpose",
+        "slug" : "lookup_loan_purpose",
+        "x" : -360,
+        "y" : -160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Retrieves loan purpose information from a lookup table and adds it to the input DataFrame.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "e5qz9JG7OKtTrs9RUaqZA$$RSfduQ0xdaeakzjbT1G0A",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "From_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AppIn_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Src_Sys_Cd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Prim_Purps_Type_Lbl",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Secnd_Purps_Type_Lbl",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Crncy_Code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Apprv_Lmt_Amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "-3S1Px0mQ3vHUFoQWdrlk$$EdcIIxDH4f1SvRrTU5Cl3",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "From_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "From_Date"
+          },
+          "description" : ""
+        }, {
+          "target" : "To_Date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "To_Date"
+          },
+          "description" : ""
+        }, {
+          "target" : "AppIn_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "AppIn_Id"
+          },
+          "description" : ""
+        }, {
+          "target" : "Src_Sys_Code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Src_Sys_Cd"
+          },
+          "description" : ""
+        }, {
+          "target" : "Prim_Purps_Type_Lbl",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Prim_Purps_Type_Lbl"
+          },
+          "description" : ""
+        }, {
+          "target" : "Secnd_Purps_Type_Lbl",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Secnd_Purps_Type_Lbl"
+          },
+          "description" : ""
+        }, {
+          "target" : "Crncy_Code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Crncy_Code"
+          },
+          "description" : ""
+        }, {
+          "target" : "Apprv_Lmt_Amt",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Apprv_Lmt_Amt"
+          },
+          "description" : ""
+        }, {
+          "target" : "Account_Id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Account_Id"
+          },
+          "description" : ""
+        }, {
+          "target" : "Predominant_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "loanpurpose(Src_Sys_Cd, Secnd_Purps_Type_Lbl)['Predominant_Purpose']"
+          },
+          "description" : ""
+        }, {
+          "target" : "Housing_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "loanpurpose(Src_Sys_Cd, Secnd_Purps_Type_Lbl)['Housing_Purpose']"
+          },
+          "description" : ""
+        }, {
+          "target" : "Sub_Purpose",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "loanpurpose(Src_Sys_Cd, Secnd_Purps_Type_Lbl)['Sub_Purpose_Housing']"
+          },
+          "description" : ""
+        }, {
+          "target" : "EFS_Housing_purpose_Rule_ID",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "\"1\""
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=224&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
       }
     }
   },
