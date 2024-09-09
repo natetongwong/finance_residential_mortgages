@@ -7,4 +7,4 @@ from l1_bronze_exactandinitialenrichments.config.ConfigStore import *
 from l1_bronze_exactandinitialenrichments.udfs import *
 
 def L1_bronze_finance_residential_mortgages(spark: SparkSession, in0: DataFrame):
-    in0.write.format("delta").mode("overwrite").saveAsTable("`westpac`.`bronze`.`finance_residential_mortgages`")
+    in0.write.format("delta").mode("overwrite").saveAsTable("`prophecy_ntong`.`finance_residential_mortgages`")

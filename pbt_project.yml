@@ -33,7 +33,12 @@ pipelines:
     dependencies: {}
   pipelines/L1_Bronze_ExactAndInitialEnrichments:
     name: L1_Bronze_ExactAndInitialEnrichments
-    description: ''
+    description: Processes loan purpose data by reading, transforming, and integrating
+      it with rule mappings and origination system data. It performs lookups to enrich
+      the data with additional attributes, joins datasets based on account IDs, and
+      applies rule overrides. The pipeline then updates column names, reformats the
+      data, and calculates residual terms for residential mortgages before saving
+      the final dataset.
     author: nathan+westpac@prophecy.io
     mode: batch
     artefactID: ''
@@ -182,40 +187,44 @@ dependencies:
 - type: plibMaven
   modifiedAt: '2024-06-19T08:40:02.184499Z'
   name: plibMaven
-  version: 8.0.11
+  version: 8.1.4
   id: '837185331'
   createdAt: '2024-06-19T08:40:02.184459Z'
+  enabled: true
+  entity: Project
 - type: plibPypi
   modifiedAt: '2024-06-19T08:40:02.18454Z'
   name: plibPypi
-  version: 1.9.5
+  version: 1.9.14
   id: '2024894383'
   createdAt: '2024-06-19T08:40:02.184528Z'
+  enabled: true
+  entity: Project
 projectDependencies:
-  '224':
-    projectUID: 224
+  '12654':
+    projectUID: 12654
     projectName: ProphecySparkBasicsPython
-    repositoryPath: gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=
-    version: 0.2.25
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=
+    version: 0.2.28
     isDefault: true
     author: null
-    createdAt: '2024-06-19 08:40:30'
-  '225':
-    projectUID: 225
+    createdAt: '2024-09-09 06:17:04'
+  '12655':
+    projectUID: 12655
     projectName: ProphecyWarehousePython
-    repositoryPath: gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_225.git&subPath=
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12655.git&subPath=
     version: 0.0.8
     isDefault: true
     author: null
     createdAt: '2024-06-19 18:25:48'
-  '262':
-    projectUID: 262
-    projectName: Ruleset_Finance_Residential_Mortgages
-    repositoryPath: gitUri=https://github.com/natetongwong/ruleset10_OverrideHousingPurpose&subPath=/
-    version: Ruleset_Finance_Residential_Mortgages/2.1
+  '28005':
+    projectUID: 28005
+    projectName: Ruleset_FinanceResidentialMortgages
+    repositoryPath: gitUri=https://github.com/natetongwong/ruleset_FinanceResidentialMortgages&subPath=/
+    version: Ruleset_FinanceResidentialMortgages/2.2
     isDefault: false
     author: null
-    createdAt: '2024-06-19 18:28:49'
+    createdAt: '2024-06-24 22:35:27'
 flags:
   shouldAddDefaultDependenciesIfAbsent: true
 pipelineConfigurations: {}

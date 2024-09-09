@@ -16,10 +16,10 @@ def pipeline(spark: SparkSession) -> None:
     df_lookup_loan_purpose = lookup_loan_purpose(spark, df_L0_raw_origination_system)
     df_L0_raw_product_system = L0_raw_product_system(spark)
     df_by_account_id = by_account_id(spark, df_L0_raw_product_system, df_lookup_loan_purpose)
-    df_add_rule_override_housing_purpose = add_rule_override_housing_purpose(spark, df_by_account_id)
-    df_Enrichments = Enrichments(spark, Config.Enrichments, df_add_rule_override_housing_purpose)
-    df_add_override_housing_purpose = add_override_housing_purpose(spark, df_Enrichments)
-    L1_bronze_finance_residential_mortgages(spark, df_add_override_housing_purpose)
+    df_add_override_housing_purpose = add_override_housing_purpose(spark, df_by_account_id)
+    df_Enrichments = Enrichments(spark, Config.Enrichments, df_add_override_housing_purpose)
+    df_add_rule_override_efs_rule_id = add_rule_override_efs_rule_id(spark, df_Enrichments)
+    L1_bronze_finance_residential_mortgages(spark, df_add_rule_override_efs_rule_id)
 
 def main():
     spark = SparkSession.builder\

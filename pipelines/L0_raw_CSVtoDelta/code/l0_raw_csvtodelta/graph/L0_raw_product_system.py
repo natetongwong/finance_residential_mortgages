@@ -7,4 +7,4 @@ from l0_raw_csvtodelta.config.ConfigStore import *
 from l0_raw_csvtodelta.udfs import *
 
 def L0_raw_product_system(spark: SparkSession, reformatted_data: DataFrame):
-    reformatted_data.write.format("delta").mode("overwrite").saveAsTable("`westpac`.`raw`.`product_system`")
+    reformatted_data.write.format("delta").mode("error").saveAsTable("`prophecy_ntong`.`product_system`")

@@ -170,3 +170,10 @@ schema:
       description: ''
       mappings: []
       tags: []
+  - name: EFS_Residual_Term_Rule_ID
+    type: integer
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

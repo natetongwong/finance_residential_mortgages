@@ -7,4 +7,4 @@ from l1_bronze_exactandinitialenrichments.config.ConfigStore import *
 from l1_bronze_exactandinitialenrichments.udfs import *
 
 def L0_raw_origination_system(spark: SparkSession) -> DataFrame:
-    return spark.read.table("`westpac`.`raw`.`origination_system`")
+    return spark.read.table("`prophecy_ntong`.`origination_system`")

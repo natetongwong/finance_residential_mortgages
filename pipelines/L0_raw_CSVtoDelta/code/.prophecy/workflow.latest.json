@@ -12,8 +12,8 @@
     "codeGenConfiguration" : {
       "editableConfig" : true,
       "plibVersion" : {
-        "mavenVersion" : "8.0.11",
-        "pyPiVersion" : "1.9.5"
+        "mavenVersion" : "8.1.4",
+        "pyPiVersion" : "1.9.14"
       }
     },
     "id" : "1",
@@ -23,7 +23,7 @@
       "hasApplication" : true
     },
     "language" : "python",
-    "fabricId" : "117",
+    "fabricId" : "11613",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -57,30 +57,30 @@
     "buildSystem" : "maven",
     "externalDependencies" : [ ],
     "dependentProjectExternalDependencies" : [ {
-      "projectUID" : "224",
+      "projectUID" : "12654",
       "projectName" : "ProphecySparkBasicsPython",
       "externalDependencies" : [ ]
     }, {
-      "projectUID" : "225",
+      "projectUID" : "12655",
       "projectName" : "ProphecyWarehousePython",
       "externalDependencies" : [ ]
     }, {
-      "projectUID" : "262",
-      "projectName" : "Ruleset_Finance_Residential_Mortgages",
+      "projectUID" : "28005",
+      "projectName" : "Ruleset_FinanceResidentialMortgages",
       "externalDependencies" : [ {
         "type" : "plibMaven",
-        "modifiedAt" : "2024-05-23T21:10:57.805406Z",
+        "modifiedAt" : "2024-06-19T20:24:43.638683Z",
         "name" : "plibMaven",
-        "version" : "7.1.100",
-        "id" : "757731159",
-        "createdAt" : "2024-05-23T21:10:57.805375Z"
+        "version" : "8.0.11",
+        "id" : "325327305",
+        "createdAt" : "2024-06-19T20:24:43.638649Z"
       }, {
         "type" : "plibPypi",
-        "modifiedAt" : "2024-05-23T21:10:57.805442Z",
+        "modifiedAt" : "2024-06-19T20:24:43.638729Z",
         "name" : "plibPypi",
-        "version" : "1.8.23",
-        "id" : "1307381560",
-        "createdAt" : "2024-05-23T21:10:57.805433Z"
+        "version" : "1.9.5",
+        "id" : "2010666717",
+        "createdAt" : "2024-06-19T20:24:43.638722Z"
       } ]
     } ],
     "isImported" : false,
@@ -406,7 +406,7 @@
         "columnsSelector" : [ "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Opened_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Src_Sys_Code", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##To_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Currency", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##From_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Legal_Entity_Id", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Maturity_Date", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Account_Id", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Current_Balance", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Gl_Account_Id", "bbTpUHfOizKRWib_JEHSp$$27ydnDRJHYxACHJXt8X9j##Product_Code" ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=224&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.28&projectSubscriptionProjectId=12654&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -724,7 +724,7 @@
         "columnsSelector" : [ "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##Apprv_Lmt_Amt", "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##AppIn_Id", "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##Crncy_Code", "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##Secnd_Purps_Type_Lbl", "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##Account_Id", "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##To_Date", "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##Prim_Purps_Type_Lbl", "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##From_Date", "HToZ1_NebEbnVx8pPuOBb$$IOJCkEnkaTP6bcaXXf26x##Src_Sys_Code" ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=224&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.28&projectSubscriptionProjectId=12654&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },

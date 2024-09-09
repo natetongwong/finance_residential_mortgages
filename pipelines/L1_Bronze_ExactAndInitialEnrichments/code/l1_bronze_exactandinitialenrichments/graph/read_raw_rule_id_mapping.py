@@ -7,4 +7,4 @@ from l1_bronze_exactandinitialenrichments.config.ConfigStore import *
 from l1_bronze_exactandinitialenrichments.udfs import *
 
 def read_raw_rule_id_mapping(spark: SparkSession) -> DataFrame:
-    return spark.read.table("`westpac`.`raw`.`rule_id_mapping`")
+    return spark.read.table("`prophecy_ntong`.`rule_id_mapping`")

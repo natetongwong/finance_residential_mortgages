@@ -11,4 +11,4 @@ def L0_raw_origination_system(spark: SparkSession, csv_origination_system: DataF
         .format("delta")\
         .option("overwriteSchema", True)\
         .mode("overwrite")\
-        .saveAsTable("`westpac`.`raw`.`origination_system`")
+        .saveAsTable("`prophecy_ntong`.`origination_system`")

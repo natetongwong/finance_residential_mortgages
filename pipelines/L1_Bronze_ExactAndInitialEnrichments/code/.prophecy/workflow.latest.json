@@ -12,8 +12,8 @@
     "codeGenConfiguration" : {
       "editableConfig" : true,
       "plibVersion" : {
-        "mavenVersion" : "8.0.11",
-        "pyPiVersion" : "1.9.5"
+        "mavenVersion" : "8.1.4",
+        "pyPiVersion" : "1.9.14"
       }
     },
     "id" : "1",
@@ -23,7 +23,7 @@
       "hasApplication" : true
     },
     "language" : "python",
-    "fabricId" : "117",
+    "fabricId" : "11613",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -66,30 +66,30 @@
     "buildSystem" : "maven",
     "externalDependencies" : [ ],
     "dependentProjectExternalDependencies" : [ {
-      "projectUID" : "224",
+      "projectUID" : "12654",
       "projectName" : "ProphecySparkBasicsPython",
       "externalDependencies" : [ ]
     }, {
-      "projectUID" : "225",
+      "projectUID" : "12655",
       "projectName" : "ProphecyWarehousePython",
       "externalDependencies" : [ ]
     }, {
-      "projectUID" : "262",
-      "projectName" : "Ruleset_Finance_Residential_Mortgages",
+      "projectUID" : "28005",
+      "projectName" : "Ruleset_FinanceResidentialMortgages",
       "externalDependencies" : [ {
         "type" : "plibMaven",
-        "modifiedAt" : "2024-05-23T21:10:57.805406Z",
+        "modifiedAt" : "2024-06-19T20:24:43.638683Z",
         "name" : "plibMaven",
-        "version" : "7.1.100",
-        "id" : "757731159",
-        "createdAt" : "2024-05-23T21:10:57.805375Z"
+        "version" : "8.0.11",
+        "id" : "325327305",
+        "createdAt" : "2024-06-19T20:24:43.638649Z"
       }, {
         "type" : "plibPypi",
-        "modifiedAt" : "2024-05-23T21:10:57.805442Z",
+        "modifiedAt" : "2024-06-19T20:24:43.638729Z",
         "name" : "plibPypi",
-        "version" : "1.8.23",
-        "id" : "1307381560",
-        "createdAt" : "2024-05-23T21:10:57.805433Z"
+        "version" : "1.9.5",
+        "id" : "2010666717",
+        "createdAt" : "2024-06-19T20:24:43.638722Z"
       } ]
     } ],
     "isImported" : false,
@@ -140,29 +140,29 @@
     "target" : "rOh0UaVAcsNM4zzmmUSwI$$qnZgWwcHp9IOazDMXGfjt",
     "targetPort" : "A7nMovVKWOPOLIfgzWU8C$$rCrRUTIrWt2FlAwadQMs3"
   }, {
-    "id" : "tTQPckfzLfn2T4XD7lgzw$$hR_bQcLrECK5pNK6Zycxj",
+    "id" : "-9_9-V9gLRw-PR4PJ5jbl$$39uAZQGKfqhWIUPH1YDdv",
+    "source" : "zDSjXi_TX_yDS0mkCwz0u$$HXXeW_CPEZGrz8C5dvQgH",
+    "sourcePort" : "5klDlFTHKPSiwtIfVniwz$$hauNYEiN7AWvq31NL7kU1",
+    "target" : "C3umtrgjb5h19oLGSWHnr$$9Ll_Zhah2XWjJUWno6uCt",
+    "targetPort" : "PyFGD5qlaZR4WDENvErp0$$g87snaFLhMrjWt5IkKcpt"
+  }, {
+    "id" : "VeLZgrwZKEj1O9iHcKf-8$$qxZHux0d05llah8ZgdIcp",
     "source" : "rOh0UaVAcsNM4zzmmUSwI$$qnZgWwcHp9IOazDMXGfjt",
     "sourcePort" : "HrrW71CjSmep7tXOLZfMo$$BJBPv8N3aWNsN_V_qiudw",
-    "target" : "47SvBcMG8-iuG8VZwImmW$$-_T0ctfpzvDfRDl8yE1Iu",
-    "targetPort" : "JxhMT9y0Rgp5B3f8uNEuK$$u8Te93bxfGOWa5nKByAt1"
+    "target" : "zSvaipf9F11Xojb0hJA8J$$gzIqRvhz6qhZ_WKTOk5ec",
+    "targetPort" : "ENYkfIRLAjJxk0GusFsEO$$n7XHps_Y5eAkFyMV68sKi"
   }, {
-    "id" : "C8IXGTp41bOBUr3vpAXfG$$7S5ukDmBm4ji1Y9ZuUZ0M",
-    "source" : "B8bkRZsOlCqy1hZg0j634$$5-_uTurzUjCgO1s_CP-ZU",
-    "sourcePort" : "yA2e2eR6CSFQx_bQyslsw$$QhDEpeSM0m7JUFTI0-xGI",
-    "target" : "RGU0ei6OxrZy1UeIo1Di4$$UICu9H_qlPK6d2NgfVvfW",
-    "targetPort" : "MiVQuEppkH882FEiFfbbJ$$IOEzy5-bLc6nQgdDHMdcl"
-  }, {
-    "id" : "NkfTytqI-LN-HdmpfZZh9",
-    "source" : "47SvBcMG8-iuG8VZwImmW$$-_T0ctfpzvDfRDl8yE1Iu",
-    "sourcePort" : "mKVr1ncjTK8TsX6AtN3VI$$9IOU96vSbLiLnpCzNxJG3",
+    "id" : "LGjUwR4GZLb_DiUSGT1_b",
+    "source" : "zSvaipf9F11Xojb0hJA8J$$gzIqRvhz6qhZ_WKTOk5ec",
+    "sourcePort" : "uYX5FAohdhAW_JVDOgHSH$$fuhnXqC3UXo4QojIi8j_D",
     "target" : "zDSjXi_TX_yDS0mkCwz0u$$HXXeW_CPEZGrz8C5dvQgH",
     "targetPort" : "aQfeo-0pBX6ERXwcbMEn3$$o-4ZYMFfpbEVZE-vxz37M"
   }, {
-    "id" : "gDO5a312EYGwCcp9xuDAd",
-    "source" : "zDSjXi_TX_yDS0mkCwz0u$$HXXeW_CPEZGrz8C5dvQgH",
-    "sourcePort" : "5klDlFTHKPSiwtIfVniwz$$hauNYEiN7AWvq31NL7kU1",
-    "target" : "B8bkRZsOlCqy1hZg0j634$$5-_uTurzUjCgO1s_CP-ZU",
-    "targetPort" : "68ppQ03S9nZUCST7zrNYC$$3D72P9kB6i8Jl2MaLMtMm"
+    "id" : "mIyK847jkB3Ma0ik72CjJ",
+    "source" : "C3umtrgjb5h19oLGSWHnr$$9Ll_Zhah2XWjJUWno6uCt",
+    "sourcePort" : "cfoStDcWa2HikHn9lldTj$$cr2Y-_Bk5RN6jejzYZ8DT",
+    "target" : "RGU0ei6OxrZy1UeIo1Di4$$UICu9H_qlPK6d2NgfVvfW",
+    "targetPort" : "MiVQuEppkH882FEiFfbbJ$$IOEzy5-bLc6nQgdDHMdcl"
   } ],
   "processes" : {
     "skMzrlHDDRn05HRUEwrTt$$HZUdjNCdosWvcDwtfbgqm" : {
@@ -176,7 +176,9 @@
         "phase" : -1,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Reads the raw data of loan purposes from the `loan_purpose` table.",
+        "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ ],
@@ -192,13 +194,13 @@
         "datasetId" : "datasets/L0_raw_loan_purpose"
       }
     },
-    "B8bkRZsOlCqy1hZg0j634$$5-_uTurzUjCgO1s_CP-ZU" : {
-      "id" : "B8bkRZsOlCqy1hZg0j634$$5-_uTurzUjCgO1s_CP-ZU",
+    "zSvaipf9F11Xojb0hJA8J$$gzIqRvhz6qhZ_WKTOk5ec" : {
+      "id" : "zSvaipf9F11Xojb0hJA8J$$gzIqRvhz6qhZ_WKTOk5ec",
       "component" : "AddRule",
       "metadata" : {
         "label" : "add_override_housing_purpose",
         "slug" : "add_override_housing_purpose",
-        "x" : 280,
+        "x" : -40,
         "y" : -280,
         "phase" : 0,
         "cache" : false,
@@ -209,20 +211,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "68ppQ03S9nZUCST7zrNYC$$3D72P9kB6i8Jl2MaLMtMm",
+          "id" : "ENYkfIRLAjJxk0GusFsEO$$n7XHps_Y5eAkFyMV68sKi",
           "slug" : "in0",
           "schema" : {
             "type" : "struct",
             "fields" : [ {
-              "name" : "Process_Date",
-              "type" : "date",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
               "name" : "From_Date",
               "type" : "date",
               "nullable" : true,
@@ -250,7 +243,7 @@
                 "tags" : [ ]
               }
             }, {
-              "name" : "Product_system",
+              "name" : "Src_Sys_Code",
               "type" : "string",
               "nullable" : true,
               "metadata" : {
@@ -322,6 +315,33 @@
                 "tags" : [ ]
               }
             }, {
+              "name" : "From_Date2",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date2",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AppIn_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
               "name" : "Origination_system",
               "type" : "string",
               "nullable" : true,
@@ -349,6 +369,15 @@
                 "tags" : [ ]
               }
             }, {
+              "name" : "Crncy_Code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
               "name" : "Apprv_Lmt_Amt",
               "type" : "double",
               "nullable" : true,
@@ -367,7 +396,7 @@
                 "tags" : [ ]
               }
             }, {
-              "name" : "EFS_Housing_Purpose",
+              "name" : "Housing_Purpose",
               "type" : "string",
               "nullable" : true,
               "metadata" : {
@@ -387,43 +416,7 @@
             }, {
               "name" : "EFS_Housing_purpose_Rule_ID",
               "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Residual_days",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Residual_years",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "EFS_Residual_Term",
-              "type" : "string",
               "nullable" : false,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Housing_Purpose",
-              "type" : "string",
-              "nullable" : true,
               "metadata" : {
                 "description" : "",
                 "mappings" : [ ],
@@ -434,7 +427,7 @@
           "isStreaming" : false
         } ],
         "outputs" : [ {
-          "id" : "yA2e2eR6CSFQx_bQyslsw$$QhDEpeSM0m7JUFTI0-xGI",
+          "id" : "uYX5FAohdhAW_JVDOgHSH$$fuhnXqC3UXo4QojIi8j_D",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
@@ -488,8 +481,8 @@
         "columnsSelector" : [ ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=https://github.com/natetongwong/ruleset10_OverrideHousingPurpose&subPath=/&tag=Ruleset_Finance_Residential_Mortgages/2.1&projectSubscriptionProjectId=262&path=gems/AddRule",
-        "projectName" : "Ruleset_Finance_Residential_Mortgages"
+        "gemId" : "gitUri=https://github.com/natetongwong/ruleset_FinanceResidentialMortgages&subPath=/&tag=Ruleset_FinanceResidentialMortgages/2.2&projectSubscriptionProjectId=28005&path=gems/AddRule",
+        "projectName" : "Ruleset_FinanceResidentialMortgages"
       }
     },
     "KpldcYto1a5eQMnCOT69S$$zW217GlgjUcmcAJB5_LXG" : {
@@ -503,7 +496,9 @@
         "phase" : -1,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Creates a lookup table for loan purposes based on specific columns from the raw loan purpose data.",
+        "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ {
@@ -619,7 +614,9 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Reads data from the 'origination_system' table.",
+        "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ ],
@@ -646,7 +643,9 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Reads the raw rule ID mapping data from the specified table.",
+        "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ ],
@@ -673,7 +672,9 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Standardizes account data by updating column names and calculating residual terms. It processes dates, maps housing purposes, and categorizes accounts into short or long-term based on residual years.",
+        "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ {
@@ -1338,7 +1339,7 @@
             "columnsSelector" : [ ]
           },
           "componentInfo" : {
-            "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=224&path=gems/Reformat",
+            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.28&projectSubscriptionProjectId=12654&path=gems/Reformat",
             "projectName" : "ProphecySparkBasicsPython"
           }
         },
@@ -1731,7 +1732,7 @@
             "columnsSelector" : [ ]
           },
           "componentInfo" : {
-            "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=224&path=gems/Reformat",
+            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.28&projectSubscriptionProjectId=12654&path=gems/Reformat",
             "projectName" : "ProphecySparkBasicsPython"
           }
         },
@@ -2149,7 +2150,7 @@
             "columnsSelector" : [ ]
           },
           "componentInfo" : {
-            "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=224&path=gems/Reformat",
+            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.28&projectSubscriptionProjectId=12654&path=gems/Reformat",
             "projectName" : "ProphecySparkBasicsPython"
           }
         }
@@ -2166,7 +2167,9 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Saves the DataFrame 'in0' as a Delta table named 'finance_residential_mortgages' in the 'prophecy_ntong' database.",
+        "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ {
@@ -2390,6 +2393,15 @@
                 "mappings" : [ ],
                 "tags" : [ ]
               }
+            }, {
+              "name" : "EFS_Residual_Term_Rule_ID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
             } ]
           },
           "isStreaming" : false
@@ -2414,7 +2426,9 @@
         "phase" : -1,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Reformats the input data by selecting specific columns and renaming them for better readability.",
+        "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ {
@@ -2583,302 +2597,11 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Predominant_Purpose", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Sub_Purpose_Leases", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Src_Sys_Cd", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Src_Lending_Purpose_Cd", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Sub_Purpose_Housing", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Sub_Purpose_Business", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Src_Lending_Purpose_Desc", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Sub_Purpose_Personal", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Housing_Purpose" ]
+        "columnsSelector" : [ "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Src_Sys_Cd", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Housing_Purpose", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Sub_Purpose_Personal", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Sub_Purpose_Business", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Sub_Purpose_Leases", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Src_Lending_Purpose_Cd", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Predominant_Purpose", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Sub_Purpose_Housing", "QZzXZKQSjlawb1CiCFVwP$$a--4KFQzG0sTeqQ0OMHNX##Src_Lending_Purpose_Desc" ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=224&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.28&projectSubscriptionProjectId=12654&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
-      }
-    },
-    "47SvBcMG8-iuG8VZwImmW$$-_T0ctfpzvDfRDl8yE1Iu" : {
-      "id" : "47SvBcMG8-iuG8VZwImmW$$-_T0ctfpzvDfRDl8yE1Iu",
-      "component" : "AddRule",
-      "metadata" : {
-        "label" : "add_rule_override_housing_purpose",
-        "slug" : "add_rule_override_housing_purpose",
-        "x" : -60,
-        "y" : -280,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false,
-        "comment" : "Adds a rule override for housing purpose to the input DataFrame.",
-        "autoUpdateComment" : true
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "JxhMT9y0Rgp5B3f8uNEuK$$u8Te93bxfGOWa5nKByAt1",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "From_Date",
-              "type" : "date",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "To_Date",
-              "type" : "date",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Account_Id",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Src_Sys_Code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Product_Code",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Gl_Account_Id",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Legal_Entity_Id",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Current_Balance",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Maturity_Date",
-              "type" : "date",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Opened_Date",
-              "type" : "date",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Currency",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "From_Date2",
-              "type" : "date",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "To_Date2",
-              "type" : "date",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "AppIn_Id",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Origination_system",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Prim_Purps_Type_Lbl",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Secnd_Purps_Type_Lbl",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Crncy_Code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Apprv_Lmt_Amt",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Predominant_Purpose",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Housing_Purpose",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "Sub_Purpose",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "EFS_Housing_purpose_Rule_ID",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
-        } ],
-        "outputs" : [ {
-          "id" : "mKVr1ncjTK8TsX6AtN3VI$$9IOU96vSbLiLnpCzNxJG3",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "importLanguage" : "sql",
-        "importString" : "",
-        "transformations" : [ {
-          "AddRule" : {
-            "expression" : {
-              "format" : "sql",
-              "expression" : "Override_Housing_Purpose()"
-            },
-            "param_errors" : [ {
-              "paramName" : "Secnd_Purps_Type_Lbl",
-              "hasError" : false
-            }, {
-              "paramName" : "Origination_system",
-              "hasError" : false
-            }, {
-              "paramName" : "Housing_Purpose",
-              "hasError" : false
-            } ]
-          },
-          "MissingColumn" : {
-            "sourceColumn" : "",
-            "defaultValue" : {
-              "expression" : "",
-              "format" : "python"
-            }
-          },
-          "DropColumn" : {
-            "sourceColumn" : ""
-          },
-          "kind" : "AddRule",
-          "RenameColumn" : {
-            "sourceColumn" : "",
-            "targetColumn" : ""
-          },
-          "AddReplaceColumn" : {
-            "sourceColumn" : "",
-            "expression" : {
-              "expression" : "",
-              "format" : "python"
-            }
-          }
-        } ],
-        "activeTab" : "transformations",
-        "columnsSelector" : [ ]
-      },
-      "componentInfo" : {
-        "gemId" : "gitUri=https://github.com/natetongwong/ruleset10_OverrideHousingPurpose&subPath=/&tag=Ruleset_Finance_Residential_Mortgages/2.1&projectSubscriptionProjectId=262&path=gems/AddRule",
-        "projectName" : "Ruleset_Finance_Residential_Mortgages"
       }
     },
     "DsrdhiOJD6BYbpY5tN8Yp$$YFNSQhX6ikr-YVS0yGc1Y" : {
@@ -2892,7 +2615,9 @@
         "phase" : -1,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Creates a lookup table named 'rulecheck' by extracting specific columns from the input DataFrame 'in0' based on the provided key and value columns.",
+        "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ {
@@ -2954,7 +2679,9 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Loads raw product system data into a DataFrame.",
+        "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ ],
@@ -2981,7 +2708,9 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Combines account information and application details based on the account ID.",
+        "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ {
@@ -3432,13 +3161,13 @@
         } ],
         "allIn1" : null,
         "activeTab" : "expressions",
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "A7nMovVKWOPOLIfgzWU8C$$rCrRUTIrWt2FlAwadQMs3##Account_Id", "3zoYgm8quv-4w23Z_bwMC$$xmCk__5gBKa-6Y5tmW3o0##Account_Id", "3zoYgm8quv-4w23Z_bwMC$$xmCk__5gBKa-6Y5tmW3o0##Apprv_Lmt_Amt", "3zoYgm8quv-4w23Z_bwMC$$xmCk__5gBKa-6Y5tmW3o0##Crncy_Code", "A7nMovVKWOPOLIfgzWU8C$$rCrRUTIrWt2FlAwadQMs3##Product_Code", "A7nMovVKWOPOLIfgzWU8C$$rCrRUTIrWt2FlAwadQMs3##Opened_Date", "3zoYgm8quv-4w23Z_bwMC$$xmCk__5gBKa-6Y5tmW3o0##Secnd_Purps_Type_Lbl", "A7nMovVKWOPOLIfgzWU8C$$rCrRUTIrWt2FlAwadQMs3##Legal_Entity_Id", "3zoYgm8quv-4w23Z_bwMC$$xmCk__5gBKa-6Y5tmW3o0##To_Date", "3zoYgm8quv-4w23Z_bwMC$$xmCk__5gBKa-6Y5tmW3o0##EFS_Housing_purpose_Rule_ID", "3zoYgm8quv-4w23Z_bwMC$$xmCk__5gBKa-6Y5tmW3o0##Housing_Purpose", "3zoYgm8quv-4w23Z_bwMC$$xmCk__5gBKa-6Y5tmW3o0##AppIn_Id", "3zoYgm8quv-4w23Z_bwMC$$xmCk__5gBKa-6Y5tmW3o0##Sub_Purpose", "3zoYgm8quv-4w23Z_bwMC$$xmCk__5gBKa-6Y5tmW3o0##Prim_Purps_Type_Lbl", "A7nMovVKWOPOLIfgzWU8C$$rCrRUTIrWt2FlAwadQMs3##Account_Id", "3zoYgm8quv-4w23Z_bwMC$$xmCk__5gBKa-6Y5tmW3o0##Predominant_Purpose", "A7nMovVKWOPOLIfgzWU8C$$rCrRUTIrWt2FlAwadQMs3##Current_Balance", "3zoYgm8quv-4w23Z_bwMC$$xmCk__5gBKa-6Y5tmW3o0##Src_Sys_Code", "A7nMovVKWOPOLIfgzWU8C$$rCrRUTIrWt2FlAwadQMs3##Maturity_Date", "A7nMovVKWOPOLIfgzWU8C$$rCrRUTIrWt2FlAwadQMs3##Gl_Account_Id", "A7nMovVKWOPOLIfgzWU8C$$rCrRUTIrWt2FlAwadQMs3##To_Date", "3zoYgm8quv-4w23Z_bwMC$$xmCk__5gBKa-6Y5tmW3o0##From_Date", "A7nMovVKWOPOLIfgzWU8C$$rCrRUTIrWt2FlAwadQMs3##Currency", "A7nMovVKWOPOLIfgzWU8C$$rCrRUTIrWt2FlAwadQMs3##From_Date", "A7nMovVKWOPOLIfgzWU8C$$rCrRUTIrWt2FlAwadQMs3##Src_Sys_Code" ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=224&path=gems/Join",
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.28&projectSubscriptionProjectId=12654&path=gems/Join",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -3448,13 +3177,13 @@
       "metadata" : {
         "label" : "lookup_loan_purpose",
         "slug" : "lookup_loan_purpose",
-        "x" : -360,
+        "x" : -380,
         "y" : -160,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Retrieves loan purpose information from a lookup table and adds it to the input DataFrame.",
+        "comment" : "Enriches loan data with additional information, including loan purpose and housing details.",
         "autoUpdateComment" : true
       },
       "ports" : {
@@ -3652,11 +3381,308 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
+        "columnsSelector" : [ "e5qz9JG7OKtTrs9RUaqZA$$RSfduQ0xdaeakzjbT1G0A##AppIn_Id", "e5qz9JG7OKtTrs9RUaqZA$$RSfduQ0xdaeakzjbT1G0A##Src_Sys_Cd", "e5qz9JG7OKtTrs9RUaqZA$$RSfduQ0xdaeakzjbT1G0A##Account_Id", "e5qz9JG7OKtTrs9RUaqZA$$RSfduQ0xdaeakzjbT1G0A##Apprv_Lmt_Amt", "e5qz9JG7OKtTrs9RUaqZA$$RSfduQ0xdaeakzjbT1G0A##Crncy_Code", "e5qz9JG7OKtTrs9RUaqZA$$RSfduQ0xdaeakzjbT1G0A##From_Date", "e5qz9JG7OKtTrs9RUaqZA$$RSfduQ0xdaeakzjbT1G0A##Prim_Purps_Type_Lbl", "e5qz9JG7OKtTrs9RUaqZA$$RSfduQ0xdaeakzjbT1G0A##To_Date", "e5qz9JG7OKtTrs9RUaqZA$$RSfduQ0xdaeakzjbT1G0A##Secnd_Purps_Type_Lbl" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.28&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "C3umtrgjb5h19oLGSWHnr$$9Ll_Zhah2XWjJUWno6uCt" : {
+      "id" : "C3umtrgjb5h19oLGSWHnr$$9Ll_Zhah2XWjJUWno6uCt",
+      "component" : "AddRule",
+      "metadata" : {
+        "label" : "add_rule_override_efs_rule_id",
+        "slug" : "add_rule_override_efs_rule_id",
+        "x" : 280,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Adds a new column to the DataFrame with the value of the 'Override_EFS_Rule_Id' column.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "PyFGD5qlaZR4WDENvErp0$$g87snaFLhMrjWt5IkKcpt",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Process_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "From_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "To_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product_Code",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gl_Account_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Legal_Entity_Id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Current_Balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Maturity_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Opened_Date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Currency",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Origination_system",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Prim_Purps_Type_Lbl",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Secnd_Purps_Type_Lbl",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Apprv_Lmt_Amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Predominant_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Sub_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Housing_purpose_Rule_ID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Residual_days",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Residual_years",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EFS_Residual_Term",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Housing_Purpose",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "cfoStDcWa2HikHn9lldTj$$cr2Y-_Bk5RN6jejzYZ8DT",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "sql",
+        "importString" : "",
+        "transformations" : [ {
+          "AddRule" : {
+            "expression" : {
+              "format" : "sql",
+              "expression" : "Override_EFS_Rule_Id()"
+            },
+            "param_errors" : [ {
+              "paramName" : "Residual_years",
+              "hasError" : false
+            }, {
+              "paramName" : "Maturity_Date",
+              "hasError" : false
+            } ]
+          },
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "kind" : "AddRule",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "",
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          }
+        } ],
+        "activeTab" : "transformations",
         "columnsSelector" : [ ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/wDp16mGH_team_30/QWF0O8MX_project_224.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=224&path=gems/Reformat",
-        "projectName" : "ProphecySparkBasicsPython"
+        "gemId" : "gitUri=https://github.com/natetongwong/ruleset_FinanceResidentialMortgages&subPath=/&tag=Ruleset_FinanceResidentialMortgages/2.2&projectSubscriptionProjectId=28005&path=gems/AddRule",
+        "projectName" : "Ruleset_FinanceResidentialMortgages"
       }
     }
   },
