@@ -1,6 +1,6 @@
 name: Finance_Residential_Mortgages
 description: '2.4 Business use case: Finance Residential Mortgages'
-version: 0.0.1
+version: '1.0'
 author: nathan+westpac@prophecy.io
 language: python
 buildSystem: ''
